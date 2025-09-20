@@ -5,7 +5,7 @@ import Providers from "./providers"
 import PropertySection from "@/app/components/property-section";
 import VisualSymphonyCarousel from "@/app/components/visual-symphony-carousel2";
 import AmenitiesSection from "@/app/components/amenities-section";
-// import MapSection from "@/app/components/map-section-google";
+import MapSection from "@/app/components/map-section-google";
 import CityNearby from "@/app/components/city-nearby-section";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
                 <PropertySection/>
                 <VisualSymphonyCarousel/>
                 <AmenitiesSection/>
-                {/*<MapSection/>*/}
+                <MapSection/>
                 <CityNearby/>
                 <LeadForm/>
                 {/*<Highlights/>*/}
