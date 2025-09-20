@@ -21,7 +21,7 @@ const containerStyle = {
 
 export default function MapSection() {
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
+        googleMapsApiKey: "AIzaSyBmlvQf8a2sCSfktqfPWo3DkzSYDwJ8Rk8",
         libraries: ["places"],
     })
 
