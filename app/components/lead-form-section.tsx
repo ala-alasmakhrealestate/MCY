@@ -42,11 +42,11 @@ export default function LeadFormSection() {
             //     }),
             // })
 
-            await fetch("https://alasmakhrealestate.com/wp-json/fluentform/v1/forms/28/submissions", {
+            await fetch("https://www.alasmakhrealestate.com/wp-json/fluentform/v1/webhook/29", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: "Bearer ",
+                    Authorization: "Basic " + btoa("lead_qualification:AEAP nNub o3zA UQ9f 7SXU z86M"),
                 },
                 body: JSON.stringify({
                     data: {
