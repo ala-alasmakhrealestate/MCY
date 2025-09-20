@@ -167,16 +167,15 @@ export default function LeadFormSection() {
                                 {/* Moving Date */}
                                 <div>
                                     <label className="block text-gray-700 font-medium mb-2">Moving Date</label>
-                                    <input
-                                        type="date"
-                                        {...register("movingDate", {
-                                            required: "Moving date is required",
-                                            validate: (value) =>
-                                                new Date(value) >= today || "Date must be at least tomorrow",
-                                        })}
-                                        min={minDate}
-                                        className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C7A386]"
-                                    />
+                                    <select
+                                        {...register("movingDate", { required: "Please select a moving date" })}
+                                    >
+                                        <option value="">Select moving date</option>
+                                        <option value="Less than one month">Less than one month</option>
+                                        <option value="One month">One month</option>
+                                        <option value="2 Months">2 Months</option>
+                                        <option value="Casually Browsing">Casually Browsing</option>
+                                    </select>
                                     {errors.movingDate && (
                                         <p className="text-red-500 text-sm">{errors.movingDate.message}</p>
                                     )}
