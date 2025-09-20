@@ -88,7 +88,7 @@ export default function MapSection() {
                     }}
                 />
             </div>
-            <div className="relative -top-[30vh] w-screen h-[30vh] bg-gray-100"></div>
+            {/*<div className="relative -top-[30vh] w-screen h-[30vh] bg-gray-100"></div>*/}
         </section>
     )
 }
