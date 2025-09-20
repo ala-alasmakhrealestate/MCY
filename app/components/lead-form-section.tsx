@@ -169,6 +169,7 @@ export default function LeadFormSection() {
                                     <label className="block text-gray-700 font-medium mb-2">Moving Date</label>
                                     <select
                                         {...register("movingDate", { required: "Please select a moving date" })}
+                                        className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C7A386]"
                                     >
                                         <option value="">Select moving date</option>
                                         <option value="Less than one month">Less than one month</option>
