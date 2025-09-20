@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 
 const center = { lat: 25.19556, lng: 51.50403 } // your location
 
-const categories: Record<string, google.maps.PlaceType> = {
+const categories: Record<string, string> = {
     Schools: "school",
     Grocery: "supermarket",
     Dine: "restaurant",
