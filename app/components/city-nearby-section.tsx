@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import {MdOutlineLocalGroceryStore, MdOutlineSchool} from "react-icons/md";
 import {CiHospital1} from "react-icons/ci";
 import {PiMosque} from "react-icons/pi";

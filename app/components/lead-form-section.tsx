@@ -22,7 +22,6 @@ export default function LeadFormSection() {
     } = useForm<LeadFormInputs>()
 
     const onSubmit = async (data: LeadFormInputs) => {
-        console.log("Lead submitted:", data)
 
         try {
             // await fetch("https://alasmakhrealestate.com/wp-json/wp/v2/leads", {
@@ -60,6 +59,7 @@ export default function LeadFormSection() {
             }).then(res => {
                 reset()
                 alert("Form submitted successfully!")
+                return res.json()
             })
 
 
