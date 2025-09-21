@@ -106,7 +106,7 @@ export default function PropertySection() {
                         {/*<p className="text-sm text-gray-500">*Subject to Availability</p>*/}
 
                         <div className="flex gap-4">
-                            <Button variant={"outline"} onClick={() => setShowVideo(false)} className={"rounded-sm font-avenirMedium text-gray-500"}>
+                            <Button variant={"outline"} onClick={() => setShowVideo(true)} className={"rounded-sm font-avenirMedium text-gray-500"}>
                                 MCY - Barwa City Video
                             </Button>
                             {showVideo && (
@@ -119,7 +119,7 @@ export default function PropertySection() {
                                     </button>
                                     <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/watch?v=8tTpGdYW3Ys"
+                                        src="https://www.youtube.com/embed/8tTpGdYW3Ys?autoplay=1"
                                         title="YouTube video"
                                         allow="autoplay; fullscreen"
                                         allowFullScreen
