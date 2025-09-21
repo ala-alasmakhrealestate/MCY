@@ -23,18 +23,18 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
             { name: "Grand Mall Hypermarket", lat: 25.1923546, lng: 51.4896023 },
         ],
     },
-    Dine: {
+    Restaurant: {
         type: "restaurant",
         places: [
             { name: "Al Tazaj", lat: 25.197, lng: 51.506 },
             { name: "Nando’s", lat: 25.202, lng: 51.509 },
         ],
     },
-    Attractions: {
-        type: "tourist_attraction",
+    Mall: {
+        type: "mall",
         places: [
-            { name: "Souq Waqif", lat: 25.286, lng: 51.533 },
-            { name: "Museum of Islamic Art", lat: 25.295, lng: 51.539 },
+            { name: "PLaza Mall", lat: 25.1876306, lng: 51.4649691 },
+            { name: "Safari Mall", lat: 25.2341491, lng: 51.5012189 },
         ],
     },
     Airport: {
