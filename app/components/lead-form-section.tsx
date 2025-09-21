@@ -114,13 +114,13 @@ export default function LeadFormSection() {
                 <div className="flex flex-col lg:flex-row bg-white rounded-2xl shadow-xl overflow-hidden">
                     {/* Left Column */}
                     <div
-                        className="f-form-sec-left lg:w-5/12 bg-[#C7A386] text-white flex flex-col justify-center items-start p-10 md:p-16">
-                        <h2 className="text-3xl md:text-4xl font-bold leading-snug">
-                            <span className="text-lg md:text-xl font-medium">WE’D LOVE TO</span>
+                        className="f-form-sec-left lg:w-5/12 bg-[#04264d] text-white flex flex-col justify-center items-start p-10 md:p-16">
+                        <h2 className="text-3xl md:text-4xl font-avenirHeavy leading-snug">
+                            <span className="text-lg md:text-xl font-avenirMedium">WE’D LOVE TO</span>
                             <br/>
                             Hear From You
                         </h2>
-                        <p className="mt-4 text-sm md:text-base opacity-90">
+                        <p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">
                             Fill out the form and we’ll get back to you with your personalized offer.
                         </p>
                     </div>
@@ -131,12 +131,12 @@ export default function LeadFormSection() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {/* Full Name */}
                                 <div>
-                                    <label className="block text-gray-700 font-medium mb-2">Full Name</label>
+                                    <label className="block text-gray-700 font-avenirMedium mb-2">Full Name</label>
                                     <input
                                         type="text"
                                         {...register("fullName", {required: "Full name is required"})}
                                         placeholder="Your Name"
-                                        className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C7A386]"
+                                        className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     />
                                     {errors.fullName && (
                                         <p className="text-red-500 text-sm">{errors.fullName.message}</p>
@@ -145,7 +145,7 @@ export default function LeadFormSection() {
 
                                 {/* Phone */}
                                 <div>
-                                    <label className="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                    <label className="block text-gray-700 font-avenirMedium mb-2">Phone Number</label>
                                     <input
                                         type="tel"
                                         {...register("phone", {
@@ -157,7 +157,7 @@ export default function LeadFormSection() {
                                             },
                                         })}
                                         placeholder="974XXXXXXXX or XXXXXXXX"
-                                        className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C7A386]"
+                                        className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     />
                                     {errors.phone && (
                                         <p className="text-red-500 text-sm">{errors.phone.message}</p>
@@ -166,10 +166,10 @@ export default function LeadFormSection() {
 
                                 {/* Moving Date */}
                                 <div>
-                                    <label className="block text-gray-700 font-medium mb-2">Moving Date</label>
+                                    <label className="block text-gray-700 font-avenirMedium mb-2">Moving Date</label>
                                     <select
                                         {...register("movingDate", { required: "Please select a moving date" })}
-                                        className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C7A386]"
+                                        className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     >
                                         <option value="">Select moving date</option>
                                         <option value="Less than one month">Less than one month</option>
@@ -187,7 +187,7 @@ export default function LeadFormSection() {
                                     <label className="block text-gray-700 font-medium mb-2">Offer</label>
                                     <select
                                         {...register("offer", {required: "Please select an offer"})}
-                                        className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C7A386]"
+                                        className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     >
                                         <option value="">Select offer</option>
                                         <option value="2-months">1 Year Contract – 2 Months Free</option>
@@ -202,7 +202,7 @@ export default function LeadFormSection() {
                             <div className="text-right">
                                 <button
                                     type="submit"
-                                    className="bg-[#C7A386] text-white font-semibold px-8 py-3 rounded-lg hover:bg-[#a9876d] transition"
+                                    className="bg-[#04264d] text-white font-avenirLight px-8 py-3 rounded-sm transition"
                                 >
                                     Submit
                                 </button>

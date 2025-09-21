@@ -69,8 +69,8 @@ export default function MapSection() {
                         <button
                             key={cat}
                             onClick={() => setActiveCategory(cat as keyof typeof categories)}
-                            className={`px-4 py-2 rounded font-semibold transition ${
-                                activeCategory === cat ? "bg-[#C7A386] text-white" : "bg-gray-200 text-gray-700"
+                            className={`px-4 py-2 rounded font-avenirMedium transition ${
+                                activeCategory === cat ? "bg-[#04264d] text-white" : "bg-gray-200 text-gray-700"
                             }`}
                         >
                             {cat}

@@ -81,17 +81,17 @@ export default function PropertySection() {
 
                         <ul className="space-y-3 text-gray-700">
                             <li>
-                                <span className="font-avenirHeavy">Ranging From:</span>
-                                <div>AED 1.87 M | USD 511 K | EUR 505 K | GBP 415 K</div>
+                                <span className="font-avenirHeavy">Square Meter:</span>
+                                {/*<div>AED 1.87 M | USD 511 K | EUR 505 K | GBP 415 K</div>*/}
                                 <div className="text-sm text-gray-500">
-                                    From 717.3 Sq. Ft. (66.64 Sq. M.)
+                                    101 sqm
                                 </div>
                             </li>
                             <li>
-                                <span className="font-avenirHeavy">To:</span>
-                                <div>AED 8.69 M | USD 2.38 M | EUR 2.36 M | GBP 1.94 M</div>
+                                <span className="font-avenirHeavy">Price:</span>
+                                {/*<div>AED 8.69 M | USD 2.38 M | EUR 2.36 M | GBP 1.94 M</div>*/}
                                 <div className="text-sm text-gray-500">
-                                    To 3110.7 Sq. Ft. (288.99 Sq. M.)
+                                    6,025 QAR
                                 </div>
                             </li>
                         </ul>
