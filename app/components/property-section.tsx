@@ -6,9 +6,12 @@ import "swiper/css"
 import "swiper/css/navigation"
 import {Button} from "@/components/ui/button"
 import Image from "next/image"
-import {useRef} from "react"
+import {useRef, useState} from "react"
 
 export default function PropertySection() {
+
+    const [showVideo, setShowVideo] = useState(false)
+
     const images = [
         "/images/MCY/MCY1.jpg",
         "/images/MCY/MCY2.jpg",
@@ -103,9 +106,26 @@ export default function PropertySection() {
                         {/*<p className="text-sm text-gray-500">*Subject to Availability</p>*/}
 
                         <div className="flex gap-4">
-                            <Button asChild variant={"outline"}>
+                            <Button variant={"outline"} onClick={() => setShowVideo(false)} className={"rounded-sm font-avenirMedium text-gray-500"}>
                                 MCY - Barwa City Video
                             </Button>
+                            {showVideo && (
+                                <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
+                                    <button
+                                        className="absolute top-5 right-5 text-white text-xl"
+                                        onClick={() => setShowVideo(false)}
+                                    >
+                                        ✕
+                                    </button>
+                                    <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/watch?v=8tTpGdYW3Ys"
+                                        title="YouTube video"
+                                        allow="autoplay; fullscreen"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            )}
                             {/*<Button asChild variant="outline">*/}
                             {/*    <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">*/}
                             {/*        Learn More*/}
