@@ -8,6 +8,7 @@ import {Button} from "@/components/ui/button"
 import Image from "next/image"
 import {useRef, useState} from "react"
 import {YoutubeIcon} from "lucide-react";
+import {NavigationOptions} from "swiper/types";
 
 
 export default function PropertySection() {
@@ -62,9 +63,10 @@ export default function PropertySection() {
                                 swiperRef.current = swiper;
                                 // Link custom navigation
                                 // TypeScript-safe way to set custom navigation
-                                if (swiper.params.navigation) {
-                                    (swiper.params.navigation.prevEl as HTMLElement | string) = "#custom-prev";
-                                    (swiper.params.navigation.nextEl as HTMLElement | string) = "#custom-next";
+                                if (typeof swiper.params.navigation !== "boolean") {
+                                    const nav = swiper.params.navigation as NavigationOptions
+                                    nav.prevEl = "#custom-prev"
+                                    nav.nextEl = "#custom-next"
                                 }
                             }}
                             autoplay={{ delay: 4000, disableOnInteraction: false }}

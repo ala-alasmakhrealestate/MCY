@@ -5,6 +5,7 @@ import { Autoplay, Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import { useRef, useState } from "react"
+import {NavigationOptions} from "swiper/types";
 
 const slides = [
     "/images/exterior/1-ARE02365-Enhanced-NR.jpg",
@@ -67,9 +68,10 @@ export default function Carousel() {
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper
                         // TypeScript-safe assignment of custom navigation
-                        if (swiper.params.navigation) {
-                            ;(swiper.params.navigation.prevEl as HTMLElement | string) = "#custom-prev"
-                            ;(swiper.params.navigation.nextEl as HTMLElement | string) = "#custom-next"
+                        if (typeof swiper.params.navigation !== "boolean") {
+                            const nav = swiper.params.navigation as NavigationOptions
+                            nav.prevEl = "#custom-prev"
+                            nav.nextEl = "#custom-next"
                         }
                     }}
                     breakpoints={{

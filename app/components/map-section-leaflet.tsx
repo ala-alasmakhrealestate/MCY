@@ -19,8 +19,8 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
     Grocery: {
         type: "supermarket",
         places: [
-            { name: "Carrefour", lat: 25.193, lng: 51.508 },
-            { name: "Family Mart", lat: 25.198, lng: 51.500 },
+            { name: "Lulu Hypermarket", lat: 25.1958425, lng: 51.5070273 },
+            { name: "Grand Mall Hypermarket", lat: 25.1923546, lng: 51.4896023 },
         ],
     },
     Dine: {
