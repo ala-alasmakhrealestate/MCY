@@ -24,14 +24,15 @@ export default function HeroSection() {
             </div>
 
             {/* Hero Content (Grid Centered) */}
-            <div className="flex flex-col md:flex-row items-start mt-24 sm:mt-36 md:items-center justify-between gap-8 px-8 sm:px-12 w-full">
+            <div
+                className="flex flex-col md:flex-row items-start mt-28 sm:mt-64 md:items-center justify-between gap-8 px-8 sm:px-12 w-full">
                 {/* Left: Heading + Paragraph */}
-                <div className="flex flex-col gap-6 max-w-xl">
-                    <h1 className="text-4xl font-avenirMedium md:text-6xl leading-tight">
+                <div className="flex flex-col gap-6 max-w-3xl">
+                    <h1 className="text-4xl font-avenirMedium md:text-6xl leading-tight text-[#04264d]">
                         Welcome to{" "}
                         <span className="font-avenirHeavy uppercase text-[#04264d]">
-        Mesaimeer
-      </span>
+                            Mesaimeer
+                          </span>
                     </h1>
                     <p className="text-lg md:text-2xl text-gray-600 font-avenirLight">
                         Experience luxury living with our exclusive promotion:{" "}
