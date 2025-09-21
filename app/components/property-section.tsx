@@ -8,6 +8,7 @@ import {Button} from "@/components/ui/button"
 import Image from "next/image"
 import {useRef, useState} from "react"
 
+
 export default function PropertySection() {
 
     const [showVideo, setShowVideo] = useState(false)
