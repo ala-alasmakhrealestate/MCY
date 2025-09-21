@@ -110,7 +110,7 @@ export default function LeadFormSection() {
 
     return (
         <section className="lead-form-wrapper py-16 bg-gray-50">
-            <div className="container mx-auto px-4">
+            <div className="w-screen mx-auto px-4">
                 <div className="flex flex-col lg:flex-row bg-white rounded-2xl shadow-xl overflow-hidden">
                     {/* Left Column */}
                     <div
@@ -190,8 +190,8 @@ export default function LeadFormSection() {
                                         className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     >
                                         <option value="">Select offer</option>
-                                        <option value="2-months">1 Year Contract – 2 Months Free</option>
-                                        <option value="3-months">2 Year Contract – 3 Months Free</option>
+                                        <option value="1 Year Contract – 2 Months Free">1 Year Contract – 2 Months Free</option>
+                                        <option value="2 Year Contract – 3 Months Free">2 Year Contract – 3 Months Free</option>
                                     </select>
                                     {errors.offer && (
                                         <p className="text-red-500 text-sm">{errors.offer.message}</p>

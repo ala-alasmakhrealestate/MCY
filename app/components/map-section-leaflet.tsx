@@ -60,7 +60,7 @@ export default function LeafletMapSection() {
 
     return (
         <section className="bg-white py-16">
-            <div className="container mx-auto px-4">
+            <div className="w-screen mx-auto px-4">
                 {/* Category Buttons */}
                 <div className="flex flex-wrap gap-4 mb-6 justify-center">
                     {Object.keys(categories).map((cat) => (

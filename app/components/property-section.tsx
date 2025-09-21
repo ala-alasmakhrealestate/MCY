@@ -7,6 +7,7 @@ import "swiper/css/navigation"
 import {Button} from "@/components/ui/button"
 import Image from "next/image"
 import {useRef, useState} from "react"
+import {YoutubeIcon} from "lucide-react";
 
 
 export default function PropertySection() {
@@ -69,7 +70,7 @@ export default function PropertySection() {
                         <div>
                             <h5 className="text-2xl font-avenirHeavy text-gray-900">
                                 <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">
-                                    MCY - Barwa City
+                                    Mesaimeer
                                 </a>
                             </h5>
                             <p className="text-gray-700 font-avenirMedium text-md">
@@ -108,7 +109,7 @@ export default function PropertySection() {
 
                         <div className="flex gap-4">
                             <Button variant={"outline"} onClick={() => setShowVideo(true)} className={"rounded-sm font-avenirMedium text-gray-500"}>
-                                MCY - Barwa City Video
+                                <YoutubeIcon className={"h-6 w-6"}/> Mesaimeer Video
                             </Button>
                             {showVideo && (
                                 <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
