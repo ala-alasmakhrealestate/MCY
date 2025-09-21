@@ -54,7 +54,7 @@ export default function HeroSection() {
             {/* Floating Cards Desktop*/}
             <div className="hidden sm:block absolute inset-0 z-20 pointer-events-none">
                 {/* MCY Logo */}
-                <div className="absolute top-10 left-10 bg-[#04264d]/30 backdrop-blur rounded-xl shadow-lg p-4 flex flex-col items-center gap-2 w-44 animate-float">
+                <div className="absolute top-10 left-10 bg-[#04264d]/30 backdrop-blur rounded-sm shadow-lg p-4 flex flex-col items-center gap-2 w-44 animate-float">
                     <Image src="/images/logo/MCY & AREDC.png" alt="MCY Logo" width={100} height={60} />
                     {/*<span className="text-sm font-avenirMedium uppercase text-gray-800 text-center">*/}
                     {/*    Mesaimeer MCY*/}
@@ -62,7 +62,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Mesaimeer Promo Card */}
-                <div className="absolute top-36 right-20 bg-[#04264d]/30 rounded-xl shadow-lg p-5 text-white max-w-xs animate-float delay-200">
+                <div className="absolute top-36 right-20 bg-[#04264d]/30 rounded-sm shadow-lg p-5 text-white max-w-xs animate-float delay-200">
                     <h3 className="font-avenirHeavy text-lg mb-2">Mesaimeer</h3>
                     <p className="text-sm mb-2">2 Bedroom Apartments for rent <span className="font-avenirHeavy">QAR 6,025 / Month</span></p>
                     <p className="text-sm">1 Year Contract – <span className="font-avenirHeavy">2 Months Free</span></p>
@@ -70,7 +70,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* AREDC Logo */}
-                {/*<div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white backdrop-blur rounded-xl shadow-lg p-4 flex flex-col items-center gap-2 w-36 animate-float delay-400">*/}
+                {/*<div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white backdrop-blur rounded-sm shadow-lg p-4 flex flex-col items-center gap-2 w-36 animate-float delay-400">*/}
                 {/*    <Image src="/images/logo/AREDC Square Logo-02.png" alt="AREDC Logo" width={50} height={50} />*/}
                 {/*    /!*<span className="text-sm font-avenirHeavy text-gray-800 text-center">AREDC</span>*!/*/}
                 {/*</div>*/}
@@ -101,7 +101,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* AREDC Logo */}
-                {/*<div className="absolute top-[50vh] left-1/2 -translate-x-1/2 bg-white backdrop-blur rounded-xl shadow-lg p-4 flex flex-col items-center gap-2 w-36 animate-float delay-400">*/}
+                {/*<div className="absolute top-[50vh] left-1/2 -translate-x-1/2 bg-white backdrop-blur rounded-sm shadow-lg p-4 flex flex-col items-center gap-2 w-36 animate-float delay-400">*/}
                 {/*    <Image src="/images/logo/AREDC Square Logo-02.png" alt="AREDC Logo" width={50} height={50} />*/}
                 {/*    /!*<span className="text-sm font-avenirHeavy text-gray-800 text-center">AREDC</span>*!/*/}
                 {/*</div>*/}

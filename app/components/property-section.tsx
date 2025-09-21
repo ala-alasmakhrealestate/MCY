@@ -34,24 +34,50 @@ export default function PropertySection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     {/* Left: Swiper Slider */}
                     <div className="relative">
+                        {/* Custom navigation buttons */}
+                        <div
+                            className="absolute top-1/2 left-2 z-10 -translate-y-1/2 cursor-pointer"
+                            id="custom-prev"
+                        >
+                            {/* Replace with your icon, e.g., an SVG */}
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </div>
+                        <div
+                            className="absolute top-1/2 right-2 z-10 -translate-y-1/2 cursor-pointer"
+                            id="custom-next"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+
                         <Swiper
                             modules={[Navigation, Autoplay]}
-                            navigation
                             loop
                             slidesPerView={1}
                             spaceBetween={0}
-                            onBeforeInit={(swiper) => (swiperRef.current = swiper)}
-                            autoplay={{delay: 4000, disableOnInteraction: false}}
-                            className="rounded-2xl overflow-hidden shadow-lg"
+                            onBeforeInit={(swiper) => {
+                                swiperRef.current = swiper;
+                                // Link custom navigation
+                                // TypeScript-safe way to set custom navigation
+                                if (swiper.params.navigation) {
+                                    (swiper.params.navigation.prevEl as HTMLElement | string) = "#custom-prev";
+                                    (swiper.params.navigation.nextEl as HTMLElement | string) = "#custom-next";
+                                }
+                            }}
+                            autoplay={{ delay: 4000, disableOnInteraction: false }}
+                            className="rounded-sm overflow-hidden shadow-lg"
                         >
                             {images.map((src, index) => (
                                 <SwiperSlide key={index}>
                                     <Image
                                         src={src}
-                                        alt={`Skyvue Stellar ${index + 1}`}
+                                        alt={`Mesaimeer ${index + 1}`}
                                         width={600}
                                         height={400}
-                                        className="rounded-2xl object-cover w-full aspect-auto"
+                                        className="rounded-sm object-cover w-full aspect-auto"
                                     />
                                 </SwiperSlide>
                             ))}
@@ -64,6 +90,7 @@ export default function PropertySection() {
                             onMouseLeave={() => swiperRef.current?.autoplay.start()}
                         />
                     </div>
+
 
                     {/* Right: Info Section */}
                     <div className="space-y-5">
