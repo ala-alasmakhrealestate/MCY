@@ -62,18 +62,21 @@ export default function PropertySection() {
 
                     {/* Right: Info Section */}
                     <div className="space-y-5">
-                        <h5 className="text-2xl font-bold text-gray-900">
-                            <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">
-                                MCY - Barwa City
-                            </a>
-                        </h5>
-                        <p className="text-gray-700 text-lg">
-                            2 Bedroom Apartments
-                        </p>
-                        <p className="font-avenirLight text-gray-600">
+                        <div>
+                            <h5 className="text-2xl font-avenirHeavy text-gray-900">
+                                <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">
+                                    MCY - Barwa City
+                                </a>
+                            </h5>
+                            <p className="text-gray-700 font-avenirMedium text-md">
+                                2 Bedroom Apartments
+                            </p>
+                        </div>
+
+                        <p className="font-avenirLight text-md text-gray-600">
                             Amazing Unfurnished 2-Bedroom Apartment in Mesaimeer City – AC & Gas Included.
                         </p>
-                        <p className="font-avenirLight text-gray-600">
+                        <p className="font-avenirLight text-md text-gray-600">
                             Enjoy life in a vibrant, fully serviced community surrounded by expansive green areas,
                             offering schools, sports courts, parks, a bank, a hypermarket, a medical center, and much
                             more — all within easy reach.
@@ -96,24 +99,18 @@ export default function PropertySection() {
                             </li>
                         </ul>
 
-                        <h4 className="text-lg font-semibold text-gray-900">Handover: March 2029</h4>
-                        <p className="text-sm text-gray-500">*Subject to Availability</p>
+                        {/*<h4 className="text-lg font-semibold text-gray-900">Handover: March 2029</h4>*/}
+                        {/*<p className="text-sm text-gray-500">*Subject to Availability</p>*/}
 
                         <div className="flex gap-4">
-                            <Button asChild>
-                                <a
-                                    href="/docs/Skyvue-Stellar.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Download Brochure
-                                </a>
+                            <Button asChild variant={"outline"}>
+                                MCY - Barwa City Video
                             </Button>
-                            <Button asChild variant="outline">
-                                <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">
-                                    Learn More
-                                </a>
-                            </Button>
+                            {/*<Button asChild variant="outline">*/}
+                            {/*    <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">*/}
+                            {/*        Learn More*/}
+                            {/*    </a>*/}
+                            {/*</Button>*/}
                         </div>
                     </div>
                 </div>
