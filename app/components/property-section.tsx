@@ -9,6 +9,10 @@ import Image from "next/image"
 import {useRef, useState} from "react"
 import {YoutubeIcon} from "lucide-react";
 import {NavigationOptions} from "swiper/types";
+import {RxSize} from "react-icons/rx";
+import {GiPriceTag} from "react-icons/gi";
+import {IoIosPricetag} from "react-icons/io";
+import {BsYoutube} from "react-icons/bs";
 
 
 export default function PropertySection() {
@@ -41,16 +45,18 @@ export default function PropertySection() {
                             id="custom-prev"
                         >
                             {/* Replace with your icon, e.g., an SVG */}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7"/>
                             </svg>
                         </div>
                         <div
                             className="absolute top-1/2 right-2 z-10 -translate-y-1/2 cursor-pointer"
                             id="custom-next"
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                             </svg>
                         </div>
 
@@ -69,7 +75,7 @@ export default function PropertySection() {
                                     nav.nextEl = "#custom-next"
                                 }
                             }}
-                            autoplay={{ delay: 4000, disableOnInteraction: false }}
+                            autoplay={{delay: 4000, disableOnInteraction: false}}
                             className="rounded-sm overflow-hidden shadow-lg"
                         >
                             {images.map((src, index) => (
@@ -97,10 +103,8 @@ export default function PropertySection() {
                     {/* Right: Info Section */}
                     <div className="space-y-5">
                         <div>
-                            <h5 className="text-2xl font-avenirHeavy text-gray-900">
-                                <a href="https://sobharealty.com/properties-in-dubai/skyvue-stellar/">
-                                    Mesaimeer
-                                </a>
+                            <h5 className="text-2xl uppercase font-avenirHeavy text-gray-900">
+                                Mesaimeer city
                             </h5>
                             <p className="text-gray-700 font-avenirMedium text-md">
                                 2 Bedroom Apartments
@@ -118,14 +122,14 @@ export default function PropertySection() {
 
                         <ul className="space-y-3 text-gray-700">
                             <li>
-                                <span className="font-avenirHeavy">Square Meter:</span>
+                                <span className="font-avenirHeavy flex"><RxSize className={"mr-1"}/>Size:</span>
                                 {/*<div>AED 1.87 M | USD 511 K | EUR 505 K | GBP 415 K</div>*/}
                                 <div className="text-sm text-gray-500">
                                     101 sqm
                                 </div>
                             </li>
                             <li>
-                                <span className="font-avenirHeavy">Price:</span>
+                                <span className="font-avenirHeavy flex"><IoIosPricetag className={"mr-1"}/>Rent: </span>
                                 {/*<div>AED 8.69 M | USD 2.38 M | EUR 2.36 M | GBP 1.94 M</div>*/}
                                 <div className="text-sm text-gray-500">
                                     6,025 QAR
@@ -137,9 +141,10 @@ export default function PropertySection() {
                         {/*<p className="text-sm text-gray-500">*Subject to Availability</p>*/}
 
                         <div className="flex gap-4">
-                            <Button variant={"outline"} onClick={() => setShowVideo(true)} className={"rounded-sm font-avenirMedium text-gray-500"}>
-                                <YoutubeIcon className={"h-6 w-6"}/> Mesaimeer Video
-                            </Button>
+                            {/*<Button variant={"outline"} onClick={() => setShowVideo(true)}*/}
+                            {/*        className={"rounded-sm font-avenirMedium text-gray-500 w-14 h-14"}>*/}
+                            {/*</Button>*/}
+                                <BsYoutube onClick={() => setShowVideo(true)} className={"h-8 w-8 text-[#FF0033]"}/>
                             {showVideo && (
                                 <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
                                     <button

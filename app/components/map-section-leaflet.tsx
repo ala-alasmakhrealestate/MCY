@@ -81,24 +81,24 @@ export default function LeafletMapSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-6 space-y-3 sm:space-y-0">
                     {/* Left panel with list */}
-                    <div className="bg-gray-50 rounded-sm shadow p-4 max-h-[60vh] overflow-y-auto">
-                        <h3 className="text-lg font-avenirHeavy mb-3">{activeCategory}</h3>
-                        <ul className="space-y-2">
-                            {currentPlaces.map((place, idx) => (
-                                <li key={idx}>
-                                    <button
-                                        onClick={() => setSelectedPlace({ lat: place.lat, lng: place.lng })}
-                                        className="w-full text-left px-3 py-2 rounded-sm hover:bg-gray-200 transition"
-                                    >
-                                        {place.name}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    {/*<div className="bg-gray-50 rounded-sm shadow p-4 max-h-[60vh] overflow-y-auto">*/}
+                    {/*    <h3 className="text-lg font-avenirHeavy mb-3">{activeCategory}</h3>*/}
+                    {/*    <ul className="space-y-2">*/}
+                    {/*        {currentPlaces.map((place, idx) => (*/}
+                    {/*            <li key={idx}>*/}
+                    {/*                <button*/}
+                    {/*                    onClick={() => setSelectedPlace({ lat: place.lat, lng: place.lng })}*/}
+                    {/*                    className="w-full text-left px-3 py-2 rounded-sm hover:bg-gray-200 transition"*/}
+                    {/*                >*/}
+                    {/*                    {place.name}*/}
+                    {/*                </button>*/}
+                    {/*            </li>*/}
+                    {/*        ))}*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
 
                     {/* Map */}
-                    <div className="col-span-2 rounded-sm">
+                    <div className="col-span-3 rounded-sm">
                         <MapContainer
                             center={center}
                             zoom={13}
