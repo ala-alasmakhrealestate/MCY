@@ -1,13 +1,13 @@
 "use client"
 
-import {MdOutlineLocalGroceryStore, MdOutlineSchool} from "react-icons/md";
+import {MdOutlineLocalGroceryStore} from "react-icons/md";
 import {CiHospital1} from "react-icons/ci";
-import {PiMosque} from "react-icons/pi";
-import {TbBuildingAirport} from "react-icons/tb";
+import {PiAirplaneLight, PiMosqueLight, PiStorefrontLight} from "react-icons/pi";
+import {IoSchoolOutline} from "react-icons/io5";
 
 const locations = [
     {
-        icon: <MdOutlineSchool className="h-10 w-10 mb-4" />,
+        icon: <IoSchoolOutline className="h-10 w-10 mb-4" />,
         title: "International Academy",
         time: "1 MINUTE",
     },
@@ -17,17 +17,17 @@ const locations = [
         time: "2 MINUTES",
     },
     {
-        icon: <MdOutlineLocalGroceryStore className="h-10 w-10 mb-4" />,
+        icon: <PiStorefrontLight className="h-10 w-10 mb-4" />,
         title: "Store Shop",
         time: "2 MINUTES",
     },
     {
-        icon: <PiMosque className="h-10 w-10 mb-4" />,
+        icon: <PiMosqueLight className="h-10 w-10 mb-4" />,
         title: "Mosque",
         time: "2 MINUTES",
     },
     {
-        icon: <TbBuildingAirport className="h-10 w-10 mb-4" />,
+        icon: <PiAirplaneLight className="h-10 w-10 mb-4" />,
         title: "Airport",
         time: "11 MINUTES",
     },
