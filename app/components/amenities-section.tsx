@@ -34,7 +34,7 @@ const amenities = [
 
 export default function AmenitiesSection() {
     return (
-        <section className=" py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-avenirMedium uppercase text-center mb-14">
                     DESIGNED FOR EVERY PASSION
@@ -47,7 +47,7 @@ export default function AmenitiesSection() {
                     {amenities.map((item, index) => (
                         <div
                             key={index}
-                            className="py-6 flex flex-col items-center justify-center text-center p-4 hover:shadow-lg transition-shadow rounded-lg bg-gray-100 "
+                            className="py-6 flex flex-col items-center justify-center text-center p-4 hover:shadow-lg transition-shadow rounded-none bg-gray-100 "
                         >
                             {/* If you want icons/images */}
                             {/* <img

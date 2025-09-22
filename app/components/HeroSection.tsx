@@ -25,9 +25,9 @@ export default function HeroSection() {
 
             {/* Hero Content (Grid Centered) */}
             <div
-                className="flex flex-col md:flex-row items-start mt-28 sm:mt-64 md:items-center justify-between gap-8 px-8 sm:px-12 w-full">
+                className="flex flex-col md:flex-row items-center mt-20 sm:mt-60 md:items-center justify-center gap-8 px-8 sm:px-12 w-full">
                 {/* Left: Heading + Paragraph */}
-                <div className="flex flex-col gap-6 max-w-4xl">
+                <div className="flex flex-col gap-6 max-w-4xl text-center">
                     <h1 className="text-4xl font-avenirMedium md:text-6xl leading-tight text-[#04264d]">
                         Welcome to{" "}
                         <span className="font-avenirHeavy uppercase text-[#04264d]">
@@ -35,7 +35,7 @@ export default function HeroSection() {
                           </span>
                     </h1>
                     <p className="text-lg md:text-2xl text-gray-600 font-avenirLight">
-                        Experience luxury living with our exclusive promotion:{" "}
+                        Experience luxury living with our exclusive promotion:{" "}<br/>
                         <span className="font-avenirHeavy uppercase text-[#04264d]">
         up to 3 months free
       </span>{" "}
@@ -44,21 +44,21 @@ export default function HeroSection() {
                 </div>
 
                 {/* Right: Promo Card */}
-                <div className="bg-[#04264d]/30 rounded-sm shadow-lg p-5 text-white max-w-sm">
-                    <h3 className="font-avenirHeavy text-lg mb-2">Mesaimeer City</h3>
-                    <p className="text-sm mb-2">
-                        2 Bedroom Apartments for rent{" "}
-                        <span className="font-avenirHeavy">QAR 6,025 / Month</span>
-                    </p>
-                    <p className="text-sm">
-                        1 Year Contract –{" "}
-                        <span className="font-avenirHeavy">2 Months Free</span>
-                    </p>
-                    <p className="text-sm">
-                        2 Year Contract –{" "}
-                        <span className="font-avenirHeavy">3 Months Free</span>
-                    </p>
-                </div>
+                {/*<div className="bg-[#04264d]/30 rounded-sm shadow-lg p-5 text-white max-w-sm">*/}
+                {/*    <h3 className="font-avenirHeavy text-lg mb-2">Mesaimeer City</h3>*/}
+                {/*    <p className="text-sm mb-2">*/}
+                {/*        2 Bedroom Apartments for rent{" "}*/}
+                {/*        <span className="font-avenirHeavy">QAR 6,025 / Month</span>*/}
+                {/*    </p>*/}
+                {/*    <p className="text-sm">*/}
+                {/*        1 Year Contract –{" "}*/}
+                {/*        <span className="font-avenirHeavy">2 Months Free</span>*/}
+                {/*    </p>*/}
+                {/*    <p className="text-sm">*/}
+                {/*        2 Year Contract –{" "}*/}
+                {/*        <span className="font-avenirHeavy">3 Months Free</span>*/}
+                {/*    </p>*/}
+                {/*</div>*/}
             </div>
 
         </section>

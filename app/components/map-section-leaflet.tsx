@@ -77,8 +77,8 @@ export default function LeafletMapSection() {
     const currentPlaces = categories[activeCategory].places
 
     return (
-        <section className="bg-white py-16">
-            <div className="w-screen mx-auto px-4">
+        <section className="bg-white pt-16">
+            <div className="w-screen mx-auto">
                 {/* Category Buttons */}
                 <div className="flex flex-wrap gap-4 mb-6 justify-center">
                     {Object.keys(categories).map((cat) => (
@@ -88,7 +88,7 @@ export default function LeafletMapSection() {
                                 setActiveCategory(cat as keyof typeof categories)
                                 setSelectedPlace(null)
                             }}
-                            className={`px-4 py-2 rounded transition ${
+                            className={`px-4 py-2 rounded-none transition ${
                                 activeCategory === cat ? "bg-[#04264d] text-white" : "bg-gray-200 text-gray-700"
                             }`}
                         >

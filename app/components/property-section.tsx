@@ -4,15 +4,11 @@ import {Swiper, SwiperSlide} from "swiper/react"
 import {Autoplay, Navigation} from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import {Button} from "@/components/ui/button"
 import Image from "next/image"
 import {useRef, useState} from "react"
-import {YoutubeIcon} from "lucide-react";
 import {NavigationOptions} from "swiper/types";
-import {RxSize} from "react-icons/rx";
-import {GiPriceTag} from "react-icons/gi";
-import {IoIosPricetag} from "react-icons/io";
-import {BsYoutube} from "react-icons/bs";
+import {BiVideo} from "react-icons/bi";
+import {Button} from "@/components/ui/button";
 
 
 export default function PropertySection() {
@@ -35,7 +31,7 @@ export default function PropertySection() {
 
     return (
         <section className="py-12 bg-white">
-            <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     {/* Left: Swiper Slider */}
                     <div className="relative">
@@ -85,7 +81,7 @@ export default function PropertySection() {
                                         alt={`Mesaimeer ${index + 1}`}
                                         width={600}
                                         height={400}
-                                        className="rounded-sm object-cover w-full aspect-auto"
+                                        className="rounded-sm object-cover object-top w-full aspect-square"
                                     />
                                 </SwiperSlide>
                             ))}
@@ -103,10 +99,10 @@ export default function PropertySection() {
                     {/* Right: Info Section */}
                     <div className="space-y-5">
                         <div>
-                            <h5 className="text-2xl uppercase font-avenirHeavy text-gray-900">
-                                Mesaimeer city
-                            </h5>
-                            <p className="text-gray-700 font-avenirMedium text-md">
+                            {/*<h5 className="text-2xl uppercase font-avenirHeavy text-gray-900">*/}
+                            {/*    Mesaimeer city*/}
+                            {/*</h5>*/}
+                            <p className="text-gray-700 font-avenirHeavy uppercase text-2xl">
                                 2 Bedroom Apartments
                             </p>
                         </div>
@@ -120,22 +116,44 @@ export default function PropertySection() {
                             more — all within easy reach.
                         </p>
 
-                        <ul className="space-y-3 text-gray-700">
-                            <li>
-                                <span className="font-avenirHeavy flex"><RxSize className={"mr-1"}/>Size:</span>
-                                {/*<div>AED 1.87 M | USD 511 K | EUR 505 K | GBP 415 K</div>*/}
-                                <div className="text-sm text-gray-500">
-                                    101 sqm
+                        <div className="flex text-gray-700">
+                            {/* Item */}
+                            <div className="flex-0 pr-4 border-r border-gray-200">
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center font-avenirHeavy mr-1">
+                                        {/*<RxSize className="mr-2 text-gray-600"/>*/}
+                                        <span>Size:</span>
+                                    </div>
+                                    <div className="text-gray-500">101 sqm</div>
                                 </div>
-                            </li>
-                            <li>
-                                <span className="font-avenirHeavy flex"><IoIosPricetag className={"mr-1"}/>Rent: </span>
-                                {/*<div>AED 8.69 M | USD 2.38 M | EUR 2.36 M | GBP 1.94 M</div>*/}
-                                <div className="text-sm text-gray-500">
-                                    6,025 QAR
+                            </div>
+
+                            {/* Item */}
+                            <div className="flex-0 px-4 border-r border-gray-200">
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center font-avenirHeavy mr-1">
+                                        {/*<IoIosPricetag className="mr-2 text-gray-600"/>*/}
+                                        <span>Rent:</span>
+                                    </div>
+                                    <div className="text-sm text-gray-500">6,025 QAR</div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+
+                            {/* Item */}
+                            <div className="flex-0 pl-4">
+                                <div className="flex items-start justify-between">
+                                    <div className="flex items-center font-avenirHeavy mr-1">
+                                        {/*<IoIosPricetag className="mr-2 text-gray-600"/>*/}
+                                        <span>Offers:</span>
+                                    </div>
+                                    <div className={"block"}>
+                                        <div className="text-sm text-gray-500">1 Year - 2 Months free</div>
+                                        <div className="text-sm text-gray-500">2 Years - 3 Months free</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                         {/*<h4 className="text-lg font-semibold text-gray-900">Handover: March 2029</h4>*/}
                         {/*<p className="text-sm text-gray-500">*Subject to Availability</p>*/}
@@ -144,7 +162,9 @@ export default function PropertySection() {
                             {/*<Button variant={"outline"} onClick={() => setShowVideo(true)}*/}
                             {/*        className={"rounded-sm font-avenirMedium text-gray-500 w-14 h-14"}>*/}
                             {/*</Button>*/}
-                                <BsYoutube onClick={() => setShowVideo(true)} className={"h-8 w-8 text-[#FF0033]"}/>
+                            <Button variant={"outline"} size={"lg"} className={"bg-gray-50 rounded-sm font-avenirLight text-sm uppercase"} onClick={() => setShowVideo(true)}>
+                                <BiVideo  className={"h-8 w-8 text-[#04264d]"}/> Video
+                            </Button>
                             {showVideo && (
                                 <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
                                     <button
