@@ -1,6 +1,5 @@
 "use client"
 
-import {MdOutlineLocalGroceryStore} from "react-icons/md";
 import {CiHospital1} from "react-icons/ci";
 import {PiAirplaneLight, PiMosqueLight, PiStorefrontLight} from "react-icons/pi";
 import {IoSchoolOutline} from "react-icons/io5";

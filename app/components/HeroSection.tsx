@@ -25,7 +25,7 @@ export default function HeroSection() {
 
             {/* Hero Content (Grid Centered) */}
             <div
-                className="flex flex-col md:flex-row items-center mt-20 sm:mt-60 md:items-center justify-center gap-8 px-8 sm:px-12 w-full">
+                className="flex items-center  sm:mt-64 md:items-center justify-center gap-8 px-8 sm:px-12 w-full">
                 {/* Left: Heading + Paragraph */}
                 <div className="flex flex-col gap-6 max-w-4xl text-center">
                     <h1 className="text-4xl font-avenirMedium md:text-6xl leading-tight text-[#04264d]">
@@ -35,11 +35,10 @@ export default function HeroSection() {
                           </span>
                     </h1>
                     <p className="text-lg md:text-2xl text-gray-600 font-avenirLight">
-                        Experience luxury living with our exclusive promotion:{" "}<br/>
+                        Experience luxury living with our exclusive promotion:{" "}
                         <span className="font-avenirHeavy uppercase text-[#04264d]">
-        up to 3 months free
-      </span>{" "}
-                        on selected properties.
+                            up to 3 months free
+                          </span>
                     </p>
                 </div>
 
