@@ -131,7 +131,7 @@ export default function LeadFormSection() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {/* Full Name */}
                                 <div>
-                                    <label className="block text-gray-700 font-avenirMedium mb-2">Full Name</label>
+                                    {/*<label className="block text-gray-700 font-avenirMedium mb-2">Full Name</label>*/}
                                     <input
                                         type="text"
                                         {...register("fullName", {required: "Full name is required"})}
@@ -145,7 +145,7 @@ export default function LeadFormSection() {
 
                                 {/* Phone */}
                                 <div>
-                                    <label className="block text-gray-700 font-avenirMedium mb-2">Phone Number</label>
+                                    {/*<label className="block text-gray-700 font-avenirMedium mb-2">Phone Number</label>*/}
                                     <input
                                         type="tel"
                                         {...register("phone", {
@@ -166,7 +166,7 @@ export default function LeadFormSection() {
 
                                 {/* Moving Date */}
                                 <div>
-                                    <label className="block text-gray-700 font-avenirMedium mb-2">Moving Date</label>
+                                    {/*<label className="block text-gray-700 font-avenirMedium mb-2">Moving Date</label>*/}
                                     <select
                                         {...register("movingDate", { required: "Please select a moving date" })}
                                         className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"
@@ -184,7 +184,7 @@ export default function LeadFormSection() {
 
                                 {/* Offer Dropdown */}
                                 <div>
-                                    <label className="block text-gray-700 font-medium mb-2">Offer</label>
+                                    {/*<label className="block text-gray-700 font-medium mb-2">Offer</label>*/}
                                     <select
                                         {...register("offer", {required: "Please select an offer"})}
                                         className="w-full px-4 py-3 border rounded-sm focus:outline-none focus:ring-2 focus:ring-[#04264d]"

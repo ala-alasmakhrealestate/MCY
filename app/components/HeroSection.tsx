@@ -27,11 +27,11 @@ export default function HeroSection() {
             <div
                 className="flex flex-col md:flex-row items-start mt-28 sm:mt-64 md:items-center justify-between gap-8 px-8 sm:px-12 w-full">
                 {/* Left: Heading + Paragraph */}
-                <div className="flex flex-col gap-6 max-w-3xl">
+                <div className="flex flex-col gap-6 max-w-4xl">
                     <h1 className="text-4xl font-avenirMedium md:text-6xl leading-tight text-[#04264d]">
                         Welcome to{" "}
                         <span className="font-avenirHeavy uppercase text-[#04264d]">
-                            Mesaimeer
+                            Mesaimeer city
                           </span>
                     </h1>
                     <p className="text-lg md:text-2xl text-gray-600 font-avenirLight">
@@ -45,7 +45,7 @@ export default function HeroSection() {
 
                 {/* Right: Promo Card */}
                 <div className="bg-[#04264d]/30 rounded-sm shadow-lg p-5 text-white max-w-sm">
-                    <h3 className="font-avenirHeavy text-lg mb-2">Mesaimeer</h3>
+                    <h3 className="font-avenirHeavy text-lg mb-2">Mesaimeer City</h3>
                     <p className="text-sm mb-2">
                         2 Bedroom Apartments for rent{" "}
                         <span className="font-avenirHeavy">QAR 6,025 / Month</span>

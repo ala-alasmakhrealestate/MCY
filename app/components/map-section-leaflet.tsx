@@ -1,7 +1,7 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet"
+import {useEffect, useState} from "react"
+import {MapContainer, Marker, Popup, TileLayer, useMap} from "react-leaflet"
 import L from "leaflet"
 import "leaflet/dist/leaflet.css"
 
@@ -12,42 +12,60 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
     Schools: {
         type: "school",
         places: [
-            { name: "Mesaimeer School", lat: 25.1905, lng: 51.502 },
-            { name: "Doha International School", lat: 25.2001, lng: 51.507 },
+            {name: "Mesaimeer School", lat: 25.1905, lng: 51.502},
+            {name: "Doha International School", lat: 25.2001, lng: 51.507},
         ],
     },
     Grocery: {
         type: "supermarket",
         places: [
-            { name: "Lulu Hypermarket", lat: 25.1958425, lng: 51.5070273 },
-            { name: "Grand Mall Hypermarket", lat: 25.1923546, lng: 51.4896023 },
+            {name: "Lulu Hypermarket", lat: 25.1958425, lng: 51.5070273},
+            {name: "Grand Mall Hypermarket", lat: 25.1923546, lng: 51.4896023},
         ],
     },
-    Restaurant: {
-        type: "restaurant",
+    Hospitals: {
+        type: "hospital",
         places: [
-            { name: "Al Tazaj", lat: 25.197, lng: 51.506 },
-            { name: "Nando’s", lat: 25.202, lng: 51.509 },
+            {
+                name: "KIMSHEALTH MEDICAL CENTRE",
+                lat: 25.195409,
+                lng: 51.500101,
+            },
+            {
+                name: "Workers Health Center Mesaimeer - Qatar Red Crescent",
+                lat: 25.216545,
+                lng: 51.529027,
+            },
+            {
+                name: "Naufar Hospital",
+                lat: 25.206173,
+                lng: 51.525063,
+            },
+            {
+                name: "Hazm Mebaireek General Hospital",
+                lat: 25.180246,
+                lng: 51.428859,
+            },
         ],
     },
     Mall: {
         type: "mall",
         places: [
-            { name: "PLaza Mall", lat: 25.1876306, lng: 51.4649691 },
-            { name: "Safari Mall", lat: 25.2341491, lng: 51.5012189 },
+            {name: "PLaza Mall", lat: 25.1876306, lng: 51.4649691},
+            {name: "Safari Mall", lat: 25.2341491, lng: 51.5012189},
         ],
     },
     Airport: {
         type: "airport",
-        places: [{ name: "Hamad International Airport", lat: 25.273, lng: 51.608 }],
+        places: [{name: "Hamad International Airport", lat: 25.273, lng: 51.608}],
     },
 }
 
 // Component to recenter map
-function RecenterMap({ lat, lng }: { lat: number; lng: number }) {
+function RecenterMap({lat, lng}: { lat: number; lng: number }) {
     const map = useMap()
     useEffect(() => {
-        map.setView([lat, lng], 14, { animate: true })
+        map.setView([lat, lng], 14, {animate: true})
     }, [lat, lng, map])
     return null
 }
@@ -102,10 +120,10 @@ export default function LeafletMapSection() {
                         <MapContainer
                             center={center}
                             zoom={13}
-                            style={{ height: "60vh", width: "100%" }}
+                            style={{height: "60vh", width: "100%"}}
                             className={"rounded-sm"}
                         >
-                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                             {currentPlaces.map((place, idx) => (
                                 <Marker
                                     key={idx}
@@ -119,7 +137,7 @@ export default function LeafletMapSection() {
                                 </Marker>
                             ))}
 
-                            {selectedPlace && <RecenterMap lat={selectedPlace.lat} lng={selectedPlace.lng} />}
+                            {selectedPlace && <RecenterMap lat={selectedPlace.lat} lng={selectedPlace.lng}/>}
                         </MapContainer>
                     </div>
                 </div>
