@@ -9,20 +9,6 @@ import "leaflet/dist/leaflet.css"
 const center: [number, number] = [25.19556, 51.50403]
 
 const categories: Record<string, { type: string; places: { name: string; lat: number; lng: number }[] }> = {
-    Schools: {
-        type: "school",
-        places: [
-            {name: "Mesaimeer School", lat: 25.1905, lng: 51.502},
-            {name: "Doha International School", lat: 25.2001, lng: 51.507},
-        ],
-    },
-    Grocery: {
-        type: "supermarket",
-        places: [
-            {name: "Lulu Hypermarket", lat: 25.1958425, lng: 51.5070273},
-            {name: "Grand Mall Hypermarket", lat: 25.1923546, lng: 51.4896023},
-        ],
-    },
     Hospitals: {
         type: "hospital",
         places: [
@@ -48,6 +34,20 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
             },
         ],
     },
+    SuperMarket: {
+        type: "supermarket",
+        places: [
+            {name: "Lulu Hypermarket", lat: 25.1958425, lng: 51.5070273},
+            {name: "Grand Mall Hypermarket", lat: 25.1923546, lng: 51.4896023},
+        ],
+    },
+    Schools: {
+        type: "school",
+        places: [
+            {name: "Mesaimeer School", lat: 25.1905, lng: 51.502},
+            {name: "Doha International School", lat: 25.2001, lng: 51.507},
+        ],
+    },
     Mall: {
         type: "mall",
         places: [
@@ -55,10 +55,30 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
             {name: "Safari Mall", lat: 25.2341491, lng: 51.5012189},
         ],
     },
+    Park: {
+        type: "Green park",
+        places: [{name: "Barwa City Central Park", lat: 25.195591, lng: 51.503688}],
+    },
+    Mosque: {
+        type: "mosque",
+        places: [
+            {name: "Barwa City Mosque", lat: 25.191844, lng: 51.498632},
+            {name: "Barwa City Grand Mosque", lat: 25.195793, lng: 51.499748}
+        ],
+    },
+    Gym: {
+        type: "gym",
+        places: [
+            {name: "Mr Gym Fitness Clubs", lat: 25.188686, lng: 51.460919},
+            {name: "M Active Club", lat: 25.195872, lng: 51.500886},
+            {name: "The Box", lat: 25.195647,  lng: 51.500708}
+        ],
+    },
     Airport: {
         type: "airport",
         places: [{name: "Hamad International Airport", lat: 25.273, lng: 51.608}],
     },
+
 }
 
 // Component to recenter map
