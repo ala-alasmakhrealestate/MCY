@@ -1,7 +1,7 @@
 "use client"
 
 import {CiDumbbell, CiHospital1} from "react-icons/ci";
-import {PiAirplaneLight, PiMosqueLight, PiStorefrontLight} from "react-icons/pi";
+import {PiAirplaneLight, PiBowlFood, PiMosqueLight, PiStorefrontLight, PiTreeThin} from "react-icons/pi";
 import {IoSchoolOutline} from "react-icons/io5";
 
 const locations = [
@@ -26,9 +26,19 @@ const locations = [
         time: "2 MINUTES",
     },
     {
+        icon: <PiBowlFood className="h-10 w-10 mb-4" />,
+        title: "Restaurant",
+        time: "2 MINUTES",
+    },
+    {
+        icon: <PiTreeThin className="h-10 w-10 mb-4" />,
+        title: "Family Park",
+        time: "2 MINUTES",
+    },
+    {
         icon: <PiMosqueLight className="h-10 w-10 mb-4" />,
         title: "Mosque",
-        time: "2 MINUTES",
+        time: "3 MINUTES",
     },
     {
         icon: <PiAirplaneLight className="h-10 w-10 mb-4" />,
