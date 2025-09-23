@@ -14,11 +14,11 @@ export default function HeroSection() {
             <div className="p-6 md:p-10">
                 <div className="">
                     <Image
-                        src="/images/logo/MCY & AREDC.png"
+                        src="/images/logo/MCY_AREDC_logo.png"
                         alt="MCY Logo"
-                        width={100}
-                        height={60}
-                        className={"w-32"}
+                        width={120}
+                        height={120}
+                        className={"w-52"}
                     />
                 </div>
             </div>
