@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function HeroSection() {
     return (
         <section
-            className="w-full min-h-screen bg-cover bg-top bg-no-repeat flex flex-col"
+            className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex flex-col"
             style={{
                 backgroundImage: "url('/images/hero-section.jpg')",
             }}
@@ -25,7 +25,7 @@ export default function HeroSection() {
 
             {/* Hero Content (Grid Centered) */}
             <div
-                className="flex items-center  sm:mt-64 md:items-center justify-center gap-8 px-8 sm:px-12 w-full">
+                className="flex items-center mt-24 md:items-center justify-center gap-8 px-8 sm:px-12 w-full">
                 {/* Left: Heading + Paragraph */}
                 <div className="flex flex-col gap-6 max-w-4xl text-center">
                     <h1 className="text-4xl font-avenirMedium md:text-6xl leading-tight text-[#04264d]">
