@@ -22,6 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="/images/logo/Al_Asmakh_White_For_watermark_gold.png" />
+        <title>Mesaimeer City - Al Asmakh Real Estate</title>
+    </head>
       <body
         className={`antialiased`}
       >
