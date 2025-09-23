@@ -80,7 +80,7 @@ export default function CityNearby() {
                     The Best of City, All within Minutes
                 </h2>
 
-                <div className="bg-white grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-6">
+                <div className="bg-white grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-6">
                     {locations.map((loc, idx) => (
                         <div
                             key={idx}
