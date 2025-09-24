@@ -99,7 +99,7 @@ export default function PropertySection() {
 
 
                     {/* Right: Info Section */}
-                    <div className="space-y-5 col-span-4">
+                    <div className="space-y-5 col-span-8 sm:col-span-4">
                         <div>
                             {/*<h5 className="text-2xl uppercase font-avenirHeavy text-gray-900">*/}
                             {/*    Mesaimeer city*/}
