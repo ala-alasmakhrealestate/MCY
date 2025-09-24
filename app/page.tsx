@@ -8,6 +8,7 @@ import VisualSymphonyCarousel from "@/app/components/visual-symphony-carousel2";
 import AmenitiesSection from "@/app/components/amenities-section";
 // import MapSection from "@/app/components/map-section-leaflet";
 import CityNearby from "@/app/components/city-nearby-section";
+import CityNearby1 from "@/app/components/city-nearby-section1";
 import MapWrapper from "@/app/components/MapWrapper";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
                 <AmenitiesSection/>
                 <MapWrapper/>
                 <CityNearby/>
+                <CityNearby1/>
                 <LeadForm/>
                 {/*<Highlights/>*/}
                 <Footer/>

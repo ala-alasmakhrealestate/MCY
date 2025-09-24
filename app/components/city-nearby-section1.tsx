@@ -1,13 +1,22 @@
 "use client"
 
 import {CiDumbbell, CiHospital1} from "react-icons/ci";
-import {PiAirplaneLight, PiBowlFood, PiMosqueLight, PiStorefrontLight, PiTreeThin} from "react-icons/pi";
-import {IoSchoolOutline} from "react-icons/io5";
+import {
+    PiAirplaneInFlightThin,
+    PiAirplaneLight,
+    PiBowlFood, PiBowlFoodThin, PiForkKnife, PiForkKnifeThin, PiHospitalThin,
+    PiMosque,
+    PiMosqueLight,
+    PiMosqueThin,
+    PiStorefrontLight, PiStorefrontThin, PiStudentThin,
+    PiTreeThin
+} from "react-icons/pi";
+import {IoFastFoodOutline, IoSchoolOutline} from "react-icons/io5";
 import Image from "next/image";
 
 const locations = [
     {
-        icon: <IoSchoolOutline className="h-10 w-10 mb-4" />,
+        icon: <PiStudentThin className="h-10 w-10 mb-4" />,
         image: <Image src={"/images/icons/school.png"} width={30} height={30} alt={"logo"}/>,
         title: "Schools and Nursery",
         time: "1 MINUTE",
@@ -19,20 +28,20 @@ const locations = [
         time: "1 MINUTE",
     },
     {
-        icon: <CiHospital1 className="h-10 w-10 mb-4" />,
+        icon: <PiHospitalThin className="h-10 w-10 mb-4" />,
         image: <Image src={"/images/icons/health.png"} width={30} height={30} alt={"logo"}/>,
         title: "Health Medical Center",
         time: "2 MINUTES",
     },
     {
-        icon: <PiStorefrontLight className="h-10 w-10 mb-4" />,
+        icon: <PiStorefrontThin className="h-10 w-10 mb-4" />,
         image: <Image src={"/images/icons/shopping.png"} width={30} height={30} alt={"logo"}/>,
         title: "Shopping Center",
         time: "2 MINUTES",
     },
     {
-        icon: <PiBowlFood className="h-10 w-10 mb-4" />,
-        image: <Image src={"/images/icons/restaurant.png"} width={30} height={30} alt={"logo"}/>,
+        image: <PiBowlFoodThin className="h-10 w-10 mb-4" />,
+        icon: <Image src={"/images/icons/restaurant_flaticon.png"} width={30} height={30} alt={"logo"}/>,
         title: "Restaurants",
         time: "2 MINUTES",
     },
@@ -43,13 +52,13 @@ const locations = [
         time: "2 MINUTES",
     },
     {
-        icon: <PiMosqueLight className="h-10 w-10 mb-4" />,
+        icon: <PiMosqueThin className="h-10 w-10 mb-4" />,
         image: <Image src={"/images/icons/mosque.png"} width={30} height={30} alt={"logo"}/>,
         title: "Mosque",
         time: "3 MINUTES",
     },
     {
-        icon: <PiAirplaneLight className="h-10 w-10 mb-4" />,
+        icon: <PiAirplaneInFlightThin className="h-10 w-10 mb-4" />,
         image: <PiAirplaneLight className="h-10 w-10 mb-4" />,
         title: "Airport",
         time: "11 MINUTES",
@@ -96,7 +105,7 @@ export default function CityNearby() {
                             className="flex flex-col items-center rounded-sm p-4 text-center transition"
                         >
                             <div className="mb-3 w-10 h-10 relative">
-                                {loc.image}
+                                {loc.icon}
                             </div>
                             <p className="text-sm uppercase font-avenirMedium text-gray-800 mb-1">{loc.title}</p>
                             <span className="text-sm uppercase font-avenirLight text-gray-500">{loc.time}</span>
