@@ -36,7 +36,7 @@ export default function PropertySection() {
             <div className="w-screen mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
                     {/* Left: Swiper Slider */}
-                    <div className="relative col-span-7">
+                    <div className="relative col-span-8 sm:col-span-7">
                         {/* Custom navigation buttons */}
                         <div
                             className="absolute top-1/2 left-2 z-10 -translate-y-1/2 cursor-pointer"
