@@ -19,12 +19,12 @@ export default function Home() {
         <main>
             <Providers>
                 <HeroSection/>
-                <PropertySection/>
+                {/*<PropertySection/>*/}
                 <PropertySection1/>
                 <VisualSymphonyCarousel/>
                 <AmenitiesSection/>
                 <MapWrapper/>
-                <CityNearby/>
+                {/*<CityNearby/>*/}
                 <CityNearby1/>
                 <LeadForm/>
                 {/*<Highlights/>*/}

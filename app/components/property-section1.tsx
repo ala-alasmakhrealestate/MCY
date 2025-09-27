@@ -36,7 +36,7 @@ export default function PropertySection() {
             <div className="w-screen mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
                     {/* Left: Swiper Slider */}
-                    <div className="relative col-span-8">
+                    <div className="relative col-span-7">
                         {/* Custom navigation buttons */}
                         <div
                             className="absolute top-1/2 left-2 z-10 -translate-y-1/2 cursor-pointer"
@@ -99,7 +99,7 @@ export default function PropertySection() {
 
 
                     {/* Right: Info Section */}
-                    <div className="space-y-5 col-span-8 sm:col-span-4">
+                    <div className="space-y-5 my-auto col-span-8 sm:col-span-5">
                         <div>
                             {/*<h5 className="text-2xl uppercase font-avenirHeavy text-gray-900">*/}
                             {/*    Mesaimeer city*/}
