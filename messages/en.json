@@ -1,0 +1,97 @@
+{
+  "Common": {
+    "Messaimeer": "Mesaimeer City",
+    "promotion": "up to 3 months free",
+    "welcoming": "Welcome to Mesaimeer City",
+    "video": "video",
+    "minute": "minute",
+    "minutes": "minutes",
+    "form": {
+      "yourName": "Your name",
+      "phone": "974XXXXXXXX or XXXXXXXX",
+      "selectMovingDate": "Please select moving date",
+      "selectOffer": "Please select an offer"
+    }
+  },
+  "NavbarLinks": {
+    "home": "Home",
+    "homeTitle": "Home page",
+    "about": "About",
+    "aboutTitle": "About page",
+    "profile": "Profile",
+    "profileTitle": "Profile page"
+  },
+  "HomePage": {
+    "title": "Landing page",
+    "heroSection": {
+      "welcome": "Welcome to",
+      "subTitle": "Experience luxury living with our exclusive promotion:"
+    },
+    "propertySection": {
+      "propertyType": "2 Bedroom Apartments",
+      "promoTwoMonths": "2 Bedroom Apartments",
+      "promoThreeMonths": "3 Months free for 2 Years",
+      "firstPara": "Amazing Unfurnished 2-Bedroom Apartment in Mesaimeer City – AC & Gas Included.",
+      "secondPara": "Enjoy life in a vibrant, fully serviced community surrounded by expansive green areas, offering schools, sports courts, parks, a bank, a hypermarket, a medical center, and much more — all within easy reach.",
+      "propertyLayout": {
+        "title": "Property Layout:",
+        "item": {
+          "first": "1 Master Bedroom with attached bathroom",
+          "second": "1 Additional Bedroom",
+          "thrid": "1 Shared Bathroom",
+          "fourth": "1 Guest Toilet",
+          "fifth": "Living and Dining Room",
+          "sixth": "Kitchen"
+        }
+      }
+    },
+    "amenitiesSection": {
+      "title": "Designed for every passion",
+      "items": {
+        "swim": "Swimming pool",
+        "kids": "Kids play area",
+        "cinema": "Cinema",
+        "park": "Green Park"
+      }
+    },
+    "carouselSection": {
+      "title": "A Visual Symphony"
+    },
+    "mapSection": {
+      "items": {
+        "hospitals": "Hospitals",
+        "supermarket": "Super Markets",
+        "schools": "Schools",
+        "mall": "Malls",
+        "park": "Parks",
+        "gym": "gym",
+        "mosque": "Mosques",
+        "airport": "Airport"
+      }
+    },
+    "cityNearPlaceSection": {
+      "title": "The Best of City, All within Minutes",
+      "items": {
+        "school": "Schools and Nursery",
+        "gym": "Gym",
+        "health": "Health Medical Center",
+        "shop": "Shopping Center",
+        "restaurants": "Restaurants",
+        "park": "Family Park",
+        "mosque": "Mosque",
+        "airport": "Airport"
+      }
+    },
+    "leadFormSection": {
+      "firstSentence": "We’d love to",
+      "secondSentence": "Hear From You",
+      "descriptionSentence": "Fill out the form and we’ll get back to you with your personalized offer."
+    }
+  },
+  "AboutPage": {
+    "title": "About"
+  },
+  "ProfilePage": {
+    "title": "Profile"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "Common": {
+    "Messaimeer": "مدينة مسيمير",
+    "promotion": "حتى 3 أشهر مجاناً",
+    "welcoming": "مرحباً بكم في مدينة مسيمير",
+    "video": "فيديو",
+    "minute": "دقيقة",
+    "minutes": "دقائق",
+    "form": {
+      "yourName": "اسمك",
+      "phone": "974XXXXXXXX or XXXXXXXX",
+      "selectMovingDate": "الرجاء اختيار تاريخ الانتقال",
+      "selectOffer": "الرجاء اختيار العرض"
+    }
+  },
+  "NavbarLinks": {
+    "home": "الرئيسية",
+    "homeTitle": "الصفحة الرئيسية",
+    "about": "من نحن",
+    "aboutTitle": "صفحة من نحن",
+    "profile": "الملف الشخصي",
+    "profileTitle": "صفحة الملف الشخصي"
+  },
+  "HomePage": {
+    "title": "الصفحة الرئيسية",
+    "heroSection": {
+      "welcome": "مرحباً بكم في",
+      "subTitle": "اختبر أسلوب حياة فاخر مع عرضنا الحصري:"
+    },
+    "propertySection": {
+      "propertyType": "شقق بغرفتي نوم",
+      "promoTwoMonths": "شقق بغرفتي نوم",
+      "promoThreeMonths": "3 أشهر مجاناً عند عقد لمدة سنتين",
+      "firstPara": "شقة غير مفروشة رائعة بغرفتي نوم في مدينة مسيمير – التكييف والغاز مشمول.",
+      "secondPara": "استمتع بالحياة في مجتمع نابض بالحيوية متكامل الخدمات تحيط به مساحات خضراء واسعة، يضم مدارس وملاعب رياضية وحدائق وبنك وسوبرماركت ومركز طبي والمزيد — كل ذلك في متناول يدك.",
+      "propertyLayout": {
+        "title": "توزيع الشقة:",
+        "item": {
+          "first": "1 غرفة نوم رئيسية مع حمام خاص",
+          "second": "1 غرفة نوم إضافية",
+          "thrid": "1 حمام مشترك",
+          "fourth": "1 دورة مياه للضيوف",
+          "fifth": "غرفة معيشة وطعام",
+          "sixth": "مطبخ"
+        }
+      }
+    },
+    "amenitiesSection": {
+      "title": "مصممة لتلبي جميع اهتماماتك",
+      "items": {
+        "swim": "مسبح",
+        "kids": "منطقة لعب للأطفال",
+        "cinema": "سينما",
+        "park": "حديقة خضراء"
+      }
+    },
+    "carouselSection": {
+      "title": "سيمفونية بصرية"
+    },
+    "mapSection": {
+      "items": {
+        "hospitals": "مستشفيات",
+        "supermarket": "سوبرماركت",
+        "schools": "مدارس",
+        "mall": "مراكز تسوق",
+        "park": "حدائق",
+        "gym": "نادي رياضي",
+        "mosque": "مساجد",
+        "airport": "مطار"
+      }
+    },
+    "cityNearPlaceSection": {
+      "title": "أفضل ما في المدينة، على بُعد دقائق فقط",
+      "items": {
+        "school": "مدارس وحضانة",
+        "gym": "نادي رياضي",
+        "health": "مركز طبي",
+        "shop": "مركز تسوق",
+        "restaurants": "مطاعم",
+        "park": "حديقة عائلية",
+        "mosque": "مسجد",
+        "airport": "مطار"
+      }
+    },
+    "leadFormSection": {
+      "firstSentence": "يسعدنا",
+      "secondSentence": "سماع رأيك",
+      "descriptionSentence": "املأ النموذج وسنعود إليك بعرض مخصص لك."
+    }
+  },
+  "AboutPage": {
+    "title": "من نحن"
+  },
+  "ProfilePage": {
+    "title": "الملف الشخصي"
+  }
+}

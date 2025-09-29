@@ -1,0 +1,266 @@
+%!Adobe-FontList 1.24
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AdobeArabic-Regular
+FamilyName:Adobe Arabic
+StyleName:Regular
+MenuName:Adobe Arabic
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Adobe Arabic Regular
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/AdobeArabic-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:299680
+FileModTime:776069558
+NameArray:0,Mac,18,Adobe Arabic
+NameArray:0,Mac,4,Adobe Arabic Regular
+NameArray:0,Win,1,Adobe Arabic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/AdobeFnt24.lst
+FileLength:7238
+FileModTime:776238831
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Light
+FamilyName:Avenir LT Std
+StyleName:35 Light
+MenuName:Avenir LT Std 35 Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Avenir LT Std 35 Light
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 35 Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27240
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 35 Light
+NameArray:0,Win,1,Avenir LT Std 35 Light
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-BookOblique
+FamilyName:Avenir LT Std
+StyleName:45 Book Oblique
+MenuName:Avenir LT Std 45 Book
+StyleBits:1
+WeightClass:350
+WidthClass:5
+AngleClass:1
+FullName:Avenir LT Std 45 Book Oblique
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 45 Book Oblique.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:28928
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 45 Book Oblique
+NameArray:0,Win,1,Avenir LT Std 45 Book
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Book
+FamilyName:Avenir LT Std
+StyleName:45 Book
+MenuName:Avenir LT Std 45 Book
+StyleBits:0
+WeightClass:350
+WidthClass:5
+AngleClass:0
+FullName:Avenir LT Std 45 Book
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 45 Book.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27444
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 45 Book
+NameArray:0,Win,1,Avenir LT Std 45 Book
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Oblique
+FamilyName:Avenir LT Std
+StyleName:55 Oblique
+MenuName:Avenir LT Std 55 Roman
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir LT Std 55 Oblique
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 55 Oblique.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:28724
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 55 Oblique
+NameArray:0,Win,1,Avenir LT Std 55 Roman
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Roman
+FamilyName:Avenir LT Std
+StyleName:55 Roman
+MenuName:Avenir LT Std 55 Roman
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir LT Std 55 Roman
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 55 Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27176
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 55 Roman
+NameArray:0,Win,1,Avenir LT Std 55 Roman
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Medium
+FamilyName:Avenir LT Std
+StyleName:65 Medium
+MenuName:Avenir LT Std 65 Medium
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Avenir LT Std 65 Medium
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 65 Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27264
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 65 Medium
+NameArray:0,Win,1,Avenir LT Std 65 Medium
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Heavy
+FamilyName:Avenir LT Std
+StyleName:85 Heavy
+MenuName:Avenir LT Std 55 Roman
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Avenir LT Std 85 Heavy
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 85 Heavy.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27640
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 85 Heavy
+NameArray:0,Win,1,Avenir LT Std 55 Roman
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirLTStd-Black
+FamilyName:Avenir LT Std
+StyleName:95 Black
+MenuName:Avenir LT Std 65 Medium
+StyleBits:2
+WeightClass:750
+WidthClass:5
+AngleClass:0
+FullName:Avenir LT Std 95 Black
+WritingScript:Roman
+OutlineFileName:/Users/alaa/Downloads/wetransfer_al-asmakh-real-estate-website-presentaion-folder_2025-08-05_0947/Real Estate Application Business Design Analysis 3 Folder/Document fonts/Avenir LT Std 95 Black.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:27912
+FileModTime:776069558
+NameArray:0,Mac,4,Avenir LT Std 95 Black
+NameArray:0,Win,1,Avenir LT Std 65 Medium
+NameArray:0,Win,16,Avenir LT Std
+%EndFont
+
