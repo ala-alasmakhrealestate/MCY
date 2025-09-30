@@ -1,5 +1,6 @@
+
 import {getMessages} from "next-intl/server";
-import HeroSection from "@/app/components/HeroSectionVideo";
+import HeroSection from "@/app/components/remark/HeroSectionVideo";
 import MarketingCatchySection from "@/app/components/MarketingCatchySection";
 import AmenitiesSection from "@/app/components/amenities-section";
 import MapWrapper from "@/app/components/MapWrapper";
@@ -10,6 +11,10 @@ import CityNearby from "@/app/components/city-nearby-section1";
 import Carousel from "@/app/components/visual-symphony-test";
 import Providers from "@/app/providers";
 import PropertyManagement from "@/app/components/property-management";
+import GeneralInfoSection from "@/app/components/remark/generalInfoSection";
+import AccessibilitySection from "@/app/components/remark/AccessibilitySection";
+import PropertyManagementSection from "@/app/components/remark/PropertyManagementSection";
+import CityNearbySection from "@/app/components/remark/CityNearbySection";
 
 export async function generateMetadata({
                                            params: {locale},
@@ -32,15 +37,16 @@ export default function Home() {
                 {/*<HeroSection/>*/}
                 <HeroSection/>
                 <MarketingCatchySection/>
+                <GeneralInfoSection/>
                 {/*<PropertySection/>*/}
-                <AmenitiesSection/>
-                <PropertySection/>
-                <PropertyManagement/>
+                <AccessibilitySection/>
+                {/*<PropertySection/>*/}
+                <PropertyManagementSection/>
                 {/*<VisualSymphonyCarousel/>*/}
                 <Carousel/>
                 <MapWrapper/>
                 {/*<CityNearby/>*/}
-                <CityNearby/>
+                <CityNearbySection/>
                 <LeadForm/>
                 {/*<Highlights/>*/}
                 <Footer/>

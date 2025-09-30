@@ -75,11 +75,31 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
             {name: "The Box", lat: 25.195647, lng: 51.500708}
         ],
     },
+    busStop: {
+        type: "busStop",
+        places: [
+            {name: "Bus Stop 56678", lat: 25.194524, lng: 51.496870},
+            {name: "Bus Stop 56680", lat: 25.192964, lng: 51.500365},
+            {name: "Bus Stop 56007", lat: 25.193534, lng: 51.500168},
+            {name: "Bus Stop Street 1131", lat: 25.191887, lng: 51.502446},
+            {name: "Bus Stop Mesaimeer City", lat: 25.196323, lng: 51.499692},
+            {name: "Bus Stop 56679", lat: 25.191005, lng: 51.504014},
+            {name: "Bus Stop 56682", lat: 25.195362, lng: 51.501973},
+            {name: "Bus Stop 56683", lat: 25.197988, lng: 51.499313},
+            {name: "Bus Stop 56681", lat: 25.196257, lng: 51.501595},
+            {name: "Bus Stop 1124", lat: 25.194555, lng: 51.506862},
+            {name: "Bus Stop 56002", lat: 25.196559, lng: 51.507094},
+            {name: "Bus Stop 56002", lat: 25.196795, lng: 51.506818},
+            {name: "Bus Stop Newton British Academy", lat: 25.199334, lng: 51.506653},
+            {name: "Bus Stop 56684", lat: 25.200308, lng: 51.505382},
+            {name: "Bus Stop 1138 East", lat: 25.201138, lng: 51.507361},
+            {name: "Bus Stop 56687", lat: 25.198502, lng: 51.508944},
+        ],
+    },
     Airport: {
         type: "airport",
         places: [{name: "Hamad International Airport", lat: 25.273, lng: 51.608}],
     },
-
 }
 
 // Component to recenter map
