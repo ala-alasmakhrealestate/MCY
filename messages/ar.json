@@ -86,6 +86,15 @@
       "firstSentence": "يسعدنا",
       "secondSentence": "سماع رأيك",
       "descriptionSentence": "املأ النموذج وسنعود إليك بعرض مخصص لك."
+    },
+    "propertyManagementSection": {
+      "title": "إدارة احترافية",
+      "items": {
+        "security": "خدمات أمنية على مدار 24 ساعة",
+        "helpDesk": "مكتب دعم مخصص",
+        "clean": "خدمات تنظيف",
+        "park": "مواقف مخصصة للسيارات"
+      }
     }
   },
   "AboutPage": {

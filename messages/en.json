@@ -86,6 +86,15 @@
       "firstSentence": "We’d love to",
       "secondSentence": "Hear From You",
       "descriptionSentence": "Fill out the form and we’ll get back to you with your personalized offer."
+    },
+    "propertyManagementSection": {
+      "title":"Professional Management",
+      "items": {
+        "security": "24/7 Security Services",
+        "helpDesk": "Dedicated Help Desk",
+        "clean": "Cleaning Services",
+        "park": "Designated Parking Areas"
+      }
     }
   },
   "AboutPage": {
