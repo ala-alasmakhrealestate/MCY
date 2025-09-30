@@ -23,7 +23,7 @@ const Navbar = ({ locale }: { locale: string }) => {
     }, [locale]);
 
     return (
-        <div className="fixed z-[200] inset-y-0 right-0 flex items-center justify-center pr-6">
+        <div className="fixed z-[200] inset-y-0 right-0 flex items-start justify-center pr-6">
             <select
                 value={locale}
                 onChange={handleLanguageChange}
