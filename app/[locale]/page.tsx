@@ -1,5 +1,5 @@
 import {getMessages} from "next-intl/server";
-import HeroSection from "@/app/components/HeroSectionVideo";
+import HeroSection from "@/app/components/HeroSection";
 import MarketingCatchySection from "@/app/components/MarketingCatchySection";
 import AmenitiesSection from "@/app/components/amenities-section";
 import MapWrapper from "@/app/components/MapWrapper";
