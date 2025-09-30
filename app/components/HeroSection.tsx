@@ -21,8 +21,8 @@ export default function HeroSection() {
                     <Image
                         src="/images/logo/MCY_AREDC_logo.png"
                         alt="MCY Logo"
-                        width={120}
-                        height={120}
+                        width={1200}
+                        height={1200}
                         className={"w-52"}
                     />
                 </div>
