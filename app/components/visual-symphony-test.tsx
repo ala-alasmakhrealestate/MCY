@@ -115,13 +115,14 @@ export default function Carousel() {
                     {t("title")}
                 </h2>
                 {/* Swiper */}
+                {isRtl && (
                 <Swiper
                     modules={[Autoplay]}
                     grabCursor={true}
                     centeredSlides={true}
                     slidesPerView="auto"
                     loop={true}
-                    dir={isRtl ? "rtl" : "ltr"}
+                    dir={"rtl"}
                     autoplay={{delay: 3000}}
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -148,6 +149,43 @@ export default function Carousel() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+                )}
+
+                {!isRtl && (
+                    <Swiper
+                        modules={[Autoplay]}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView="auto"
+                        loop={true}
+                        dir={"ltr"}
+                        autoplay={{delay: 3000}}
+                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                        onSwiper={(swiper) => (swiperRef.current = swiper)}
+                        style={{paddingTop: "50px", paddingBottom: "50px"}}
+                    >
+                        {slides.map((src, index) => (
+                            <SwiperSlide
+                                key={index}
+                                style={{
+                                    width: "60vw",
+                                    transition: "transform 0.3s",
+                                    transform: activeIndex === index ? "scale(1.1)" : "scale(0.8)",
+                                    margin: "0 10px",
+                                }}
+                            >
+                                <div className="relative w-full" style={{aspectRatio: "16/9"}}>
+                                    <Image
+                                        src={src}
+                                        alt={`Slide ${index + 1}`}
+                                        fill
+                                        style={{objectFit: "cover", borderRadius: "2px"}}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                )}
 
                 {/* Custom Navigation */}
                 <button

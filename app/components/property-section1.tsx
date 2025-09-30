@@ -46,10 +46,8 @@ export default function PropertySection() {
     useEffect(() => {
         // Detect from URL path
         if (pathname?.startsWith("/ar")) {
-            console.log("right")
             setIsRtl(true);
         } else {
-            console.log("letf")
             setIsRtl(false);
         }
 
@@ -89,37 +87,75 @@ export default function PropertySection() {
                             </svg>
                         </div>
 
-                        <Swiper
-                            modules={[Navigation, Autoplay]}
-                            loop
-                            slidesPerView={1}
-                            spaceBetween={0}
-                            dir={isRtl ? "rtl" : "ltr"}
-                            onBeforeInit={(swiper) => {
-                                swiperRef.current = swiper;
-                                // Link custom navigation
-                                // TypeScript-safe way to set custom navigation
-                                if (typeof swiper.params.navigation !== "boolean") {
-                                    const nav = swiper.params.navigation as NavigationOptions
-                                    nav.prevEl = "#custom-prev"
-                                    nav.nextEl = "#custom-next"
-                                }
-                            }}
-                            autoplay={{delay: 4000, disableOnInteraction: false}}
-                            className="rounded-none overflow-hidden"
-                        >
-                            {images.map((src, index) => (
-                                <SwiperSlide key={index}>
-                                    <Image
-                                        src={src}
-                                        alt={`Mesaimeer ${index + 1}`}
-                                        width={10000}
-                                        height={10000}
-                                        className="rounded-none object-cover object-center w-full aspect-video sm:aspect-video md:aspect-video lg:aspect-video xl:aspect-video "
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
+                        {isRtl && (
+                            <Swiper
+                                modules={[Navigation, Autoplay]}
+                                loop
+                                slidesPerView={1}
+                                spaceBetween={0}
+                                dir={"rtl"}
+                                onBeforeInit={(swiper) => {
+                                    swiperRef.current = swiper;
+                                    // Link custom navigation
+                                    // TypeScript-safe way to set custom navigation
+                                    if (typeof swiper.params.navigation !== "boolean") {
+                                        const nav = swiper.params.navigation as NavigationOptions
+                                        nav.prevEl = "#custom-prev"
+                                        nav.nextEl = "#custom-next"
+                                    }
+                                }}
+                                autoplay={{delay: 4000, disableOnInteraction: false}}
+                                className="rounded-none overflow-hidden"
+                            >
+                                {images.map((src, index) => (
+                                    <SwiperSlide key={index}>
+                                        <Image
+                                            src={src}
+                                            alt={`Mesaimeer ${index + 1}`}
+                                            width={10000}
+                                            height={10000}
+                                            className="rounded-none object-cover object-center w-full aspect-video sm:aspect-video md:aspect-video lg:aspect-video xl:aspect-video "
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        )}
+
+                        {!isRtl && (
+                            <Swiper
+                                modules={[Navigation, Autoplay]}
+                                loop
+                                slidesPerView={1}
+                                spaceBetween={0}
+                                dir={"ltr"}
+                                onBeforeInit={(swiper) => {
+                                    swiperRef.current = swiper;
+                                    // Link custom navigation
+                                    // TypeScript-safe way to set custom navigation
+                                    if (typeof swiper.params.navigation !== "boolean") {
+                                        const nav = swiper.params.navigation as NavigationOptions
+                                        nav.prevEl = "#custom-prev"
+                                        nav.nextEl = "#custom-next"
+                                    }
+                                }}
+                                autoplay={{delay: 4000, disableOnInteraction: false}}
+                                className="rounded-none overflow-hidden"
+                            >
+                                {images.map((src, index) => (
+                                    <SwiperSlide key={index}>
+                                        <Image
+                                            src={src}
+                                            alt={`Mesaimeer ${index + 1}`}
+                                            width={10000}
+                                            height={10000}
+                                            className="rounded-none object-cover object-center w-full aspect-video sm:aspect-video md:aspect-video lg:aspect-video xl:aspect-video "
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        )}
+
+
 
                         {/* Pause/Resume on hover */}
                         <div
