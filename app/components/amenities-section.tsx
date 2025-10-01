@@ -1,6 +1,6 @@
 "use client"
 
-import {PiCourtBasketballLight, PiSwimmingPoolLight, PiTreeEvergreen} from "react-icons/pi";
+import {PiCourtBasketballLight, PiPawPrint, PiSwimmingPoolLight, PiTreeEvergreen} from "react-icons/pi";
 import {GiKidSlide} from "react-icons/gi";
 import {RiMovie2Line} from "react-icons/ri";
 import {useTranslations} from "next-intl";
@@ -19,6 +19,10 @@ const amenities = [
     //     icon: <RiMovie2Line className={"w-10 h-10 mb-4"}/>,
     //     label: "cinema",
     // },
+    {
+        icon: <PiPawPrint className={"w-10 h-10 mb-4"}/>,
+        label: "petFriendly",
+    },
     {
         icon: <PiCourtBasketballLight className={"w-10 h-10 mb-4"}/>,
         label: "sport",
@@ -47,13 +51,13 @@ export default function AmenitiesSection() {
 
     return (
         <section className="py-16 bg-white">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="w-screen mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-avenirMedium uppercase text-center mb-14">
                     {t("title")}
                 </h2>
 
                 <div
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center"
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center"
                     data-aos="fade-up"
                 >
                     {amenities.map((item, index) => (

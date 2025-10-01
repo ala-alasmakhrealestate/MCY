@@ -53,7 +53,8 @@
         "cinema": "Cinema",
         "park": "Green Park",
         "sport": "Sport",
-        "fmb": "Food and Beverage"
+        "fmb": "Food and Beverage",
+        "petFriendly": "Pet friendly community"
       }
     },
     "carouselSection": {
