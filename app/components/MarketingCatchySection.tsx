@@ -19,7 +19,7 @@ export default function MarketingCatchySection() {
             {/* Centered Text */}
             <div className="relative text-center px-4 z-10">
                 <p
-                    className="text-[#a27a35] text-3xl md:text-5xl font-avenirRoman capitalize"
+                    className="text-gray-800 text-3xl md:text-5xl font-avenirRoman capitalize"
                 >
                     {common("welcoming")}
                 </p>
