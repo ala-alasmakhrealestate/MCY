@@ -36,6 +36,7 @@ export default function PropertySection() {
         "/images/new_pictures/interior/ARE02279-Enhanced-NR.jpg",
         "/images/new_pictures/interior/ARE02284-Enhanced-NR.jpg",
         "/images/new_pictures/interior/ARE02287-Enhanced-NR.jpg",
+        "/images/new_pictures/interior/ARE02299-Enhanced-NR.jpg",
         "/images/new_pictures/interior/ARE02291-Enhanced-NR.jpg",
     ]
 

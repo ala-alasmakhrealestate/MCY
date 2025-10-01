@@ -1,6 +1,6 @@
 "use client"
 
-import {PiSwimmingPoolLight, PiTreeEvergreen} from "react-icons/pi";
+import {PiCourtBasketballLight, PiSwimmingPoolLight, PiTreeEvergreen} from "react-icons/pi";
 import {GiKidSlide} from "react-icons/gi";
 import {RiMovie2Line} from "react-icons/ri";
 import {useTranslations} from "next-intl";
@@ -14,9 +14,13 @@ const amenities = [
         icon: <GiKidSlide className={"w-10 h-10 mb-4"}/>,
         label: "kids",
     },
+    // {
+    //     icon: <RiMovie2Line className={"w-10 h-10 mb-4"}/>,
+    //     label: "cinema",
+    // },
     {
-        icon: <RiMovie2Line className={"w-10 h-10 mb-4"}/>,
-        label: "cinema",
+        icon: <PiCourtBasketballLight className={"w-10 h-10 mb-4"}/>,
+        label: "sport",
     },
     {
         icon: <PiTreeEvergreen className={"w-10 h-10 mb-4"}/>,
