@@ -94,6 +94,7 @@ const categories: Record<string, { type: string; places: { name: string; lat: nu
             {name: "Bus Stop 56684", lat: 25.200308, lng: 51.505382},
             {name: "Bus Stop 1138 East", lat: 25.201138, lng: 51.507361},
             {name: "Bus Stop 56687", lat: 25.198502, lng: 51.508944},
+            {name: "Bus Stop 56686", lat: 25.194964, lng: 51.509196},
         ],
     },
     Airport: {

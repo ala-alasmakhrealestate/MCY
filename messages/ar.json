@@ -79,7 +79,8 @@
         "restaurants": "مطاعم",
         "park": "حديقة عائلية",
         "mosque": "مسجد",
-        "airport": "مطار"
+        "airport": "مطار",
+        "busstop": "محطة الحافلات"
       }
     },
     "leadFormSection": {
