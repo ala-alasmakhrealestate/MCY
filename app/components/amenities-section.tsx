@@ -4,6 +4,7 @@ import {PiCourtBasketballLight, PiSwimmingPoolLight, PiTreeEvergreen} from "reac
 import {GiKidSlide} from "react-icons/gi";
 import {RiMovie2Line} from "react-icons/ri";
 import {useTranslations} from "next-intl";
+import {IoRestaurantOutline} from "react-icons/io5";
 
 const amenities = [
     {
@@ -26,6 +27,10 @@ const amenities = [
         icon: <PiTreeEvergreen className={"w-10 h-10 mb-4"}/>,
         label: "park",
     },
+    {
+        icon: <IoRestaurantOutline className={"w-10 h-10 mb-4"}/>,
+        label: "fmb",
+    },
     // {
     //     icon: "/images/open-seating.svg",
     //     label: "OPEN SEATING AREA",
@@ -42,19 +47,19 @@ export default function AmenitiesSection() {
 
     return (
         <section className="py-16 bg-white">
-            <div className="max-w-4xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-avenirMedium uppercase text-center mb-14">
                     {t("title")}
                 </h2>
 
                 <div
-                    className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center"
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center"
                     data-aos="fade-up"
                 >
                     {amenities.map((item, index) => (
                         <div
                             key={index}
-                            className="py-6 flex flex-col items-center justify-center text-center p-4 hover:shadow-lg transition-shadow rounded-none bg-gray-100 "
+                            className="h-full py-6 flex flex-col items-center justify-center text-center p-4 hover:shadow-lg transition-shadow rounded-none bg-gray-100 "
                         >
                             {/* If you want icons/images */}
                             {/* <img
