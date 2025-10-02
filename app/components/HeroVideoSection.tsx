@@ -6,7 +6,7 @@ import {useEffect, useRef, useState} from "react"
 export default function HeroVideoSection() {
     const videoRef = useRef<HTMLVideoElement>(null)
 
-    const [videoSrc, setVideoSrc] = useState(null)
+    const [videoSrc, setVideoSrc] = useState<string | null>(null)
 
     useEffect(() => {
         // Function to switch video based on screen size
@@ -68,7 +68,7 @@ export default function HeroVideoSection() {
                 ref={videoRef}
                 // key={videoSrc} // force reload when src changes
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src={videoSrc}
+                src={videoSrc || ""}
                 autoPlay
                 loop
                 muted // keep muted for autoplay
