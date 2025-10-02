@@ -1,5 +1,4 @@
 import {getMessages} from "next-intl/server";
-import HeroSection from "@/app/components/HeroSection";
 import MarketingCatchySection from "@/app/components/MarketingCatchySection";
 import AmenitiesSection from "@/app/components/amenities-section";
 import MapWrapper from "@/app/components/MapWrapper";
@@ -10,6 +9,7 @@ import CityNearby from "@/app/components/city-nearby-section1";
 import Carousel from "@/app/components/visual-symphony-test";
 import Providers from "@/app/providers";
 import PropertyManagement from "@/app/components/property-management";
+import HeroVideoSection from "@/app/components/HeroVideoSection";
 
 export async function generateMetadata({
                                            params: {locale},
@@ -30,7 +30,7 @@ export default function Home() {
             {/*<div className="text-3xl font-bold mt-20">{t("title")}</div>*/}
             <Providers>
                 {/*<HeroSection/>*/}
-                <HeroSection/>
+                <HeroVideoSection/>
                 <MarketingCatchySection/>
                 {/*<PropertySection/>*/}
                 <AmenitiesSection/>
