@@ -89,7 +89,8 @@
     "leadFormSection": {
       "firstSentence": "يسعدنا",
       "secondSentence": "سماع رأيك",
-      "descriptionSentence": "املأ النموذج وسنعود إليك بعرض مخصص لك."
+      "descriptionSentence": "املأ النموذج وسنعود إليك بعرض مخصص لك.",
+      "callCenter": "مركز الاتصال"
     },
     "propertyManagementSection": {
       "title": "إدارة احترافية",

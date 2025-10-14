@@ -106,7 +106,6 @@ export default function LeadFormSection() {
 
 
         } catch (error) {
-            console.error(error)
             alert("Something went wrong. Please try again.")
         }
     }
@@ -125,6 +124,12 @@ export default function LeadFormSection() {
                         </h2>
                         <p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">
                             {t("descriptionSentence")}
+                        </p>
+
+                        <p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">
+                            {t("callCenter")}:
+                            <a href={"tel:+97440410888"} className={"rtl:hidden"}>+974 4041 0888</a>
+                            <a href={"tel:+97440410888"} className={"ltr:hidden"}>0888 4041 974+</a>
                         </p>
                     </div>
 

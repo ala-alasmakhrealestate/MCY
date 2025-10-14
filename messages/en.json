@@ -89,7 +89,8 @@
     "leadFormSection": {
       "firstSentence": "We’d love to",
       "secondSentence": "Hear From You",
-      "descriptionSentence": "Fill out the form and we’ll get back to you with your personalized offer."
+      "descriptionSentence": "Fill out the form and we’ll get back to you with your personalized offer.",
+      "callCenter": "Call Center"
     },
     "propertyManagementSection": {
       "title":"Professional Management",
