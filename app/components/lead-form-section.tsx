@@ -126,11 +126,11 @@ export default function LeadFormSection() {
                             {t("descriptionSentence")}
                         </p>
 
-                        <p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">
-                            {t("callCenter")}:
-                            <a href={"tel:+97440410888"} className={"rtl:hidden"}>+974 4041 0888</a>
-                            <a href={"tel:+97440410888"} className={"ltr:hidden"}>0888 4041 974+</a>
-                        </p>
+                        {/*<p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">*/}
+                        {/*    {t("callCenter")}:*/}
+                        {/*    <a href={"tel:+97440410888"} className={"rtl:hidden"}>+974 4041 0888</a>*/}
+                        {/*    <a href={"tel:+97440410888"} className={"ltr:hidden"}>0888 4041 974+</a>*/}
+                        {/*</p>*/}
                     </div>
 
                     {/* Right Column (Form) */}
