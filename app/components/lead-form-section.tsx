@@ -125,7 +125,9 @@ export default function LeadFormSection() {
                         <p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">
                             {t("descriptionSentence")}
                         </p>
-
+                        <p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">
+                            Offer Validity: Until December 31, 2025
+                        </p>
                         {/*<p className="mt-4 text-sm font-avenirLight md:text-base opacity-90">*/}
                         {/*    {t("callCenter")}:*/}
                         {/*    <a href={"tel:+97440410888"} className={"rtl:hidden"}>+974 4041 0888</a>*/}
