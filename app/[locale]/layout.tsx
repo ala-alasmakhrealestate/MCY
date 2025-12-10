@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "../globals.css";
 import {NextIntlClientProvider} from "next-intl";
 import {getMessages} from "next-intl/server";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export default async function RootLayout({
                                              children,
@@ -13,6 +14,7 @@ export default async function RootLayout({
     const messages = await getMessages();
     return (
         <html lang={locale}>
+        <GoogleTagManager gtmId="GTM-WX4T9HM" />
         <body>
         <NextIntlClientProvider messages={messages}>
 
