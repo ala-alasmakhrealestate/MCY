@@ -14,7 +14,7 @@ export default async function RootLayout({
     const messages = await getMessages();
     return (
         <html lang={locale}>
-        <GoogleTagManager gtmId="GTM-WX4T9HM" />
+        <GoogleTagManager gtmId="GTM-T3HCW8F8" />
         <body>
         <NextIntlClientProvider messages={messages}>
 

@@ -2,6 +2,7 @@
 
 import {useForm} from "react-hook-form"
 import {useTranslations} from "next-intl";
+import {Slide, toast, ToastContainer} from 'react-toastify';
 
 type LeadFormInputs = {
     fullName: string
@@ -98,15 +99,45 @@ export default function LeadFormSection() {
 
             console.log(res)
             if (res.status === 200) {
-                alert("Form submitted successfully!")
+                toast.success('Thanks for registering, we will contact you soon!', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                    theme: "light",
+                    transition: Slide,
+                });
                 reset() // React Hook Form reset
             } else {
-                alert("Submission failed, try again.")
+                toast.error('Please try again later!', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                    theme: "light",
+                    transition: Slide,
+                });
             }
 
 
         } catch (error) {
-            alert("Something went wrong. Please try again.")
+            toast.error('Something went wrong. Please try again!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+                theme: "light",
+                transition: Slide,
+            });
         }
     }
 
