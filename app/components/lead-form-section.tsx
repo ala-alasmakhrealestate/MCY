@@ -101,7 +101,7 @@ export default function LeadFormSection() {
             if (res.status === 200) {
                 toast.success('Thanks for registering, we will contact you soon!', {
                     position: "top-right",
-                    autoClose: 3000,
+                    autoClose: 5000,
                     hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: false,
@@ -114,7 +114,7 @@ export default function LeadFormSection() {
             } else {
                 toast.error('Please try again later!', {
                     position: "top-right",
-                    autoClose: 3000,
+                    autoClose: 5000,
                     hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: false,
@@ -129,7 +129,7 @@ export default function LeadFormSection() {
         } catch (error) {
             toast.error('Something went wrong. Please try again!', {
                 position: "top-right",
-                autoClose: 3000,
+                autoClose: 5000,
                 hideProgressBar: true,
                 closeOnClick: true,
                 pauseOnHover: false,
