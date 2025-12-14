@@ -252,6 +252,7 @@ export default function LeadFormSection() {
                     </div>
                 </div>
             </div>
+            <ToastContainer/>
         </section>
     )
 }
