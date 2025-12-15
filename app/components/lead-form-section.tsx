@@ -3,6 +3,7 @@
 import {useForm} from "react-hook-form"
 import {useTranslations} from "next-intl";
 import {Slide, toast, ToastContainer} from 'react-toastify';
+import {useState} from "react";
 
 type LeadFormInputs = {
     fullName: string
@@ -18,90 +19,82 @@ export default function LeadFormSection() {
     const t = useTranslations("HomePage.leadFormSection");
     const common = useTranslations("Common");
 
-    const {
-        register,
-        handleSubmit,
-        formState: {errors},
-        reset,
-    } = useForm<LeadFormInputs>()
+    const [formData, setFormData] = useState({
+        fullName: "",
+        movingDate: "",
+        offer: "",
+        phone: "",
+        // agree: false,
+    });
 
-    const onSubmit = async (data: LeadFormInputs) => {
+    const [errors, setErrors] = useState<{
+        fullName: string,
+        offer: string,
+        movingDate: string,
+        phone: string
+    }>({
+        fullName: "",
+        movingDate: "",
+        offer: "",
+        phone: "",
+    });
 
-        try {
-            // await fetch("https://alasmakhrealestate.com/wp-json/wp/v2/leads", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //         Authorization: "Basic " + btoa("lead_qualification:AEAP nNub o3zA UQ9f 7SXU z86M"),
-            //     },
-            //     body: JSON.stringify({
-            //         title: data.phone,
-            //         meta: {
-            //             fullName: data.fullName,
-            //             phone: data.phone,
-            //             moving_date: data.movingDate,
-            //             offer: data.offer,
-            //         },
-            //         status: "publish",
-            //     }),
-            // })
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const {name, value} = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
 
-            // await fetch("https://www.alasmakhrealestate.com/wp-json/fluentform/v1/webhook/29", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //         Authorization: "Basic " + btoa("lead_qualification:AEAP nNub o3zA UQ9f 7SXU z86M"),
-            //     },
-            //     body: JSON.stringify({
-            //         data: {
-            //             fullName: data.fullName,
-            //             phone: data.phone,
-            //             moving_date: data.movingDate,
-            //             offer: data.offer,
-            //         }
-            //     }),
-            // }).then(res => {
-            //     reset()
-            //     alert("Form submitted successfully!")
-            //     return res.json()
-            // })
+    const validate = () => {
+        const newErrors: {
+            fullName: string,
+            offer: string,
+            movingDate: string,
+            phone: string
+        } = {
+            fullName: "",
+            offer: "",
+            movingDate: "",
+            phone: ""
+        };
 
-            const formData: LeadFormInputs = {
-                fullName: data.fullName,
-                phone: data.phone,
-                movingDate: data.movingDate,
-                offer: data.offer
+        if (!formData.fullName.trim()) {
+            newErrors.fullName = "Name is required";
+
+        }
+        // if (!formData.email.trim()) newErrors.email = "Email is required";
+        if (!formData.offer.trim()) newErrors.offer = "Offer is required";
+        if (!formData.movingDate.trim()) newErrors.movingDate = "Moving date is required";
+        if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
+        // if (!formData.message.trim()) newErrors.message = "Message is required";
+        // if (!formData.agree) newErrors.agree = "You must agree to save your information";
+
+        setErrors(newErrors);
+
+        return Object.values(newErrors).map(item => {
+                if (item.length > 0)
+                    return false
             }
+        )
+        return true
+    };
 
-            // Convert to URL-encoded string
-            const formBody = new URLSearchParams(formData).toString()
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
-            // let formData = new URLSearchParams();
-            // formData.append('fullName', data.fullName);
-            // formData.append('phone', data.phone);
-            // formData.append('movingDate', data.movingDate);
-            // formData.append('offer', data.offer);
+        if (!validate()) return;
 
-            const res = await fetch("https://alasmakhrealestate.com/wp-json/mcy-lead-plugin/v1/save", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: "Basic " + btoa("lead_qualification:AEAP nNub o3zA UQ9f 7SXU z86M"),
-                },
-                // body: formBody,
-                body: JSON.stringify({
-                    fullName: data.fullName,
-                    phone: data.phone,
-                    movingDate: data.movingDate,
-                    offer: data.offer
-                }),
-            })
-
-            console.log(res)
-            if (res.status === 200) {
+        fetch("/api/register", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(formData),
+        })
+            .then(() => {
                 toast.success('Thanks for registering, we will contact you soon!', {
                     position: "top-right",
-                    autoClose: 5000,
+                    autoClose: 3000,
                     hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: false,
@@ -110,11 +103,11 @@ export default function LeadFormSection() {
                     theme: "light",
                     transition: Slide,
                 });
-                reset() // React Hook Form reset
-            } else {
+            })
+            .catch(() => {
                 toast.error('Please try again later!', {
                     position: "top-right",
-                    autoClose: 5000,
+                    autoClose: 3000,
                     hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: false,
@@ -123,23 +116,9 @@ export default function LeadFormSection() {
                     theme: "light",
                     transition: Slide,
                 });
-            }
-
-
-        } catch (error) {
-            toast.error('Something went wrong. Please try again!', {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                progress: undefined,
-                theme: "light",
-                transition: Slide,
+                alert("Please try again later!");
             });
-        }
-    }
+    };
 
     return (
         <section className="py-0 bg-gray-100">
@@ -168,14 +147,16 @@ export default function LeadFormSection() {
 
                     {/* Right Column (Form) */}
                     <div className="lg:w-7/12 p-8 md:p-16">
-                        <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {/* Full Name */}
                                 <div>
                                     {/*<label className="block text-gray-700 font-avenirMedium mb-2">Full Name</label>*/}
                                     <input
                                         type="text"
-                                        {...register("fullName", {required: "Full name is required"})}
+                                        value={formData.fullName}
+                                        name="fullName"
+                                        onChange={handleChange}
                                         placeholder={common("form.yourName")}
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     />
@@ -189,19 +170,14 @@ export default function LeadFormSection() {
                                     {/*<label className="block text-gray-700 font-avenirMedium mb-2">Phone Number</label>*/}
                                     <input
                                         type="tel"
-                                        {...register("phone", {
-                                            required: "Phone number is required",
-                                            pattern: {
-                                                value: /^(?:974)?[0-9]{8}$/,
-                                                message:
-                                                    "Phone must be 8 digits or start with 974 followed by 8 digits",
-                                            },
-                                        })}
+                                        value={formData.phone}
+                                        name="phone"
+                                        onChange={handleChange}
                                         placeholder={common("form.phone")}
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     />
                                     {errors.phone && (
-                                        <p className="text-red-500 text-sm">{errors.phone.message}</p>
+                                        <p className="text-red-500 text-sm">{errors.phone.phone}</p>
                                     )}
                                 </div>
 
@@ -209,7 +185,9 @@ export default function LeadFormSection() {
                                 <div>
                                     {/*<label className="block text-gray-700 font-avenirMedium mb-2">Moving Date</label>*/}
                                     <select
-                                        {...register("movingDate", { required: "Please select a moving date" })}
+                                        value={formData.movingDate}
+                                        name="movingDate"
+                                        onChange={handleChange}
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     >
                                         <option value="">{common("form.selectMovingDate")}</option>
@@ -227,7 +205,9 @@ export default function LeadFormSection() {
                                 <div>
                                     {/*<label className="block text-gray-700 font-medium mb-2">Offer</label>*/}
                                     <select
-                                        {...register("offer", {required: "Please select an offer"})}
+                                        value={formData.offer}
+                                        name="offer"
+                                        onChange={handleChange}
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     >
                                         <option value="">{common("form.selectOffer")}</option>
