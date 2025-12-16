@@ -160,7 +160,7 @@ export default function LeadFormSection() {
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     />
                                     {errors.fullName && (
-                                        <p className="text-red-500 text-sm">{errors.fullName.message}</p>
+                                        <p className="text-red-500 text-sm">{errors.fullName}</p>
                                     )}
                                 </div>
 
@@ -176,7 +176,7 @@ export default function LeadFormSection() {
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     />
                                     {errors.phone && (
-                                        <p className="text-red-500 text-sm">{errors.phone.phone}</p>
+                                        <p className="text-red-500 text-sm">{errors.phone}</p>
                                     )}
                                 </div>
 
@@ -196,7 +196,7 @@ export default function LeadFormSection() {
                                         <option value="Casually Browsing">Casually Browsing</option>
                                     </select>
                                     {errors.movingDate && (
-                                        <p className="text-red-500 text-sm">{errors.movingDate.message}</p>
+                                        <p className="text-red-500 text-sm">{errors.movingDate}</p>
                                     )}
                                 </div>
 
@@ -214,7 +214,7 @@ export default function LeadFormSection() {
                                         <option value="2 Year Contract – 3 Months Free">2 Year Contract – 3 Months Free</option>
                                     </select>
                                     {errors.offer && (
-                                        <p className="text-red-500 text-sm">{errors.offer.message}</p>
+                                        <p className="text-red-500 text-sm">{errors.offer}</p>
                                     )}
                                 </div>
                             </div>
