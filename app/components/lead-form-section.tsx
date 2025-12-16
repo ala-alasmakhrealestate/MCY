@@ -90,18 +90,32 @@ export default function LeadFormSection() {
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(formData),
         })
-            .then(() => {
-                toast.success('Thanks for registering, we will contact you soon!', {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    progress: undefined,
-                    theme: "light",
-                    transition: Slide,
-                });
+            .then((res) => {
+                if (res.status === 200) {
+                    toast.success('Thanks for registering, we will contact you soon!', {
+                        position: "top-right",
+                        autoClose: 3000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: false,
+                        draggable: false,
+                        progress: undefined,
+                        theme: "light",
+                        transition: Slide,
+                    });
+                } else {
+                    toast.error('Please try again later!', {
+                        position: "top-right",
+                        autoClose: 3000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: false,
+                        draggable: false,
+                        progress: undefined,
+                        theme: "light",
+                        transition: Slide,
+                    });
+                }
             })
             .catch(() => {
                 toast.error('Please try again later!', {
@@ -210,8 +224,12 @@ export default function LeadFormSection() {
                                         className="w-full px-4 py-3 border rounded-none font-avenirMedium focus:outline-none focus:ring-2 focus:ring-[#04264d]"
                                     >
                                         <option value="">{common("form.selectOffer")}</option>
-                                        <option value="1 Year Contract – 2 Months Free">1 Year Contract – 2 Months Free</option>
-                                        <option value="2 Year Contract – 3 Months Free">2 Year Contract – 3 Months Free</option>
+                                        <option value="1 Year Contract – 2 Months Free">1 Year Contract – 2 Months
+                                            Free
+                                        </option>
+                                        <option value="2 Year Contract – 3 Months Free">2 Year Contract – 3 Months
+                                            Free
+                                        </option>
                                     </select>
                                     {errors.offer && (
                                         <p className="text-red-500 text-sm">{errors.offer}</p>
