@@ -20,7 +20,7 @@ export default async function RootLayout({
 
             <Navbar locale={locale}/>
             {children}
-            <div className="fixed right-5 bottom-10 pb-4 flex flex-col gap-3">
+            <div className="fixed right-5 bottom-10 pb-4 flex flex-col gap-3" style={{zIndex:"1000"}}>
 
                 <a
                     href="https://api.whatsapp.com/send?phone=+97444485111"

@@ -1,6 +1,5 @@
 "use client"
 
-import {useForm} from "react-hook-form"
 import {useTranslations} from "next-intl";
 import {Slide, toast, ToastContainer} from 'react-toastify';
 import {useState} from "react";
