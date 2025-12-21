@@ -12,6 +12,7 @@ type LeadFormInputs = {
 }
 
 export default function LeadFormSection() {
+    const [isLoading, setIsLoading] = useState<boolean>(false)
     const today = new Date()
     today.setDate(today.getDate() + 1) // minimum tomorrow
     const minDate = today.toISOString().split("T")[0]
@@ -82,6 +83,7 @@ export default function LeadFormSection() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsLoading(true);
 
         if (!validate()) return;
 
@@ -131,6 +133,7 @@ export default function LeadFormSection() {
                 });
                 alert("Please try again later!");
             });
+        setIsLoading(false);
     };
 
     return (
@@ -240,9 +243,10 @@ export default function LeadFormSection() {
                             <div className="text-right">
                                 <button
                                     type="submit"
+                                    disabled={isLoading}
                                     className="bg-[#04264d] text-white font-avenirLight px-8 py-3 rounded-none transition"
                                 >
-                                    Submit
+                                    {isLoading?"Submit":"Processing ..."}
                                 </button>
                             </div>
                         </form>
