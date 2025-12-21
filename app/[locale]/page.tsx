@@ -10,6 +10,7 @@ import Carousel from "@/app/components/visual-symphony-test";
 import Providers from "@/app/providers";
 import PropertyManagement from "@/app/components/property-management";
 import HeroVideoSection from "@/app/components/HeroVideoSection";
+import HeroSection from "@/app/components/HeroSection";
 
 export async function generateMetadata({
                                            params: {locale},
@@ -30,7 +31,7 @@ export default function Home() {
             {/*<div className="text-3xl font-bold mt-20">{t("title")}</div>*/}
             <Providers>
                 {/*<HeroSection/>*/}
-                <HeroVideoSection/>
+                <HeroSection/>
                 <MarketingCatchySection/>
                 {/*<PropertySection/>*/}
                 <AmenitiesSection/>
