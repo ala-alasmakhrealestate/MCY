@@ -83,9 +83,9 @@ export default function LeadFormSection() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setIsLoading(true);
 
         if (!validate()) return;
+        setIsLoading(true);
 
         fetch("/api/register", {
             method: "POST",
@@ -105,6 +105,13 @@ export default function LeadFormSection() {
                         theme: "light",
                         transition: Slide,
                     });
+                    setFormData({
+                        fullName: "",
+                        movingDate: "",
+                        offer: "",
+                        phone: "",
+                        // agree: false,
+                    })
                 } else {
                     toast.error('Please try again later!', {
                         position: "top-right",
@@ -132,8 +139,9 @@ export default function LeadFormSection() {
                     transition: Slide,
                 });
                 alert("Please try again later!");
-            });
-        setIsLoading(false);
+            }).finally(()=> {
+                setIsLoading(false);
+        })
     };
 
     return (
@@ -244,9 +252,9 @@ export default function LeadFormSection() {
                                 <button
                                     type="submit"
                                     disabled={isLoading}
-                                    className="bg-[#04264d] text-white font-avenirLight px-8 py-3 rounded-none transition"
+                                    className="bg-[#04264d] text-white font-avenirLight px-8 py-3 rounded-none transition disabled:bg-gray-200"
                                 >
-                                    {isLoading?"Submit":"Processing ..."}
+                                    {!isLoading?"Submit":"Processing ..."}
                                 </button>
                             </div>
                         </form>
